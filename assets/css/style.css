@@ -1,0 +1,387 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin-bottom: 108px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 42px;
+}
+h2 {  
+    font-weight: 600;
+    font-size: 32px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #232323; 
+}
+input[placeholder] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+.title {
+    margin-bottom: 72px;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    line-height: 130%;
+    color: #232323;
+}
+
+.main-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 130%;
+    color: #232323;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.banner {
+    margin-bottom: 54px;
+}
+
+.banner__data {
+    align-items: flex-start;
+    margin-bottom: 72px;
+}
+
+.banner__title {
+    margin-top: 0;
+    margin-right: 177px;
+}
+
+.banner__text {
+    width: 725px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.banner__items {
+    width: 258px;
+}
+
+.banner__wrapp {
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: 192px 192px; 
+    gap: 36px; 
+    grid-template-areas: 
+      "banner__item banner__slider"
+      "banner__item-item--two banner__slider"; 
+  }
+
+.banner__slider { 
+    grid-area: banner__slider; 
+}
+
+.banner__item { 
+    margin: 0;
+    margin-bottom: 36px;
+    grid-area: banner__item; 
+}
+
+.banner__item-item--two { 
+    grid-area: banner__item-item--two; 
+}
+
+.item--two {
+    grid-row-start: 2;
+}
+
+
+
+.banner__item {
+    width: 258px;
+    height: 100%;   
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+
+
+.banner__slider {
+    position: relative;
+}
+
+.slider__wrapper {
+    max-width: 846px;
+    width: 100%;
+    height: 420px;
+    position: relative;
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.65);
+}
+
+.banner__link, .banner__link--hover {
+    color: #232323;
+    text-decoration: none;
+}
+
+.banner__link--hover {
+    display: none;
+}
+
+.banner__item:hover {
+    background-color: #044971;
+}
+
+.banner__item:hover .banner__link {
+    display: none;
+}
+
+.banner__item:hover .banner__link--hover{
+    display: block;
+    color: #fff;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide--active {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.dots__wrapper {
+    position: absolute;
+    bottom: 5%;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f2f3f5; 
+    margin-right: 10px;  
+    cursor: pointer;
+}
+
+.dot:last-child{
+    margin-right: 0;
+}
+
+.dot--active {
+    background-color: #FF7313;
+}
+
+.properties {
+    background-color: #f2f3f5;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    margin-bottom: 54px;
+}
+
+.properties__title {
+    margin-bottom: 72px;
+}
+
+.properties__card {
+    width: 258px;
+    height: 288px;
+}
+
+.properties__title {
+    margin-bottom: 72px;
+}
+
+.dc {
+    justify-content: space-between;
+}
+
+.card {
+    width: 258px;
+    text-align: center;
+}
+
+.card__image {
+    height: 208px;
+}
+
+.works {
+    margin-bottom: 108px;
+}
+
+.works__title {
+    margin-bottom: 72px;
+}
+.works__banner {
+    width: 100%;
+    height: 564px;
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.65);
+}
+
+.guarantee {
+    background-color: #FF7313;
+    margin-bottom: 108px;
+    padding-top: 27px;
+    padding-bottom: 30px;
+}
+
+
+.guarantee__title {
+    margin-bottom: 72px;
+}
+
+.guarantee__content {
+    padding-left: 24px;
+    margin-bottom: 36px;
+    width: 90%;
+}
+
+.guarantee__wrapp{
+    padding: 12px 24px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    overflow:hidden;
+    margin-bottom: 1.5rem;
+}
+
+.guarantee__heading::-webkit-details-marker{display:none;}
+.guarantee__heading::-moz-list-bullet{list-style-type:none;}
+.guarantee__heading::marker{display:none;} 
+.guarantee__heading {
+    display:block;
+    padding: .3em 1em .3em .9em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #232323;
+    cursor: pointer;
+    position: relative;
+}
+
+.guarantee__heading:before {  
+    top: .4em;
+    right: .3em;
+    color: transparent;
+    background: url("../images/arrow-open.svg") no-repeat 50% 50% / 1em 1em;
+    width: 1em;
+    height: 1em;  
+    content: "";
+    position: absolute;
+    transition: transform .5s;
+}
+
+.guarantee__wrapp[open] > .guarantee__heading:before {
+    transform: scale(1,-1);
+}
+
+.guarantee__heading ~ * {
+    padding: 0 1em 10px 1.4em;
+}
+.guarantee__wrapp[open] .guarantee__heading ~ *{ 
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+}
+
+.guarantee__heading:focus {
+    outline:0;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+.form {
+    margin-bottom: 108px;
+}
+
+form {
+    margin: auto;
+    width: 430px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 36px;
+    width: 100%;
+    height: 54px;
+}
+
+input[placeholder] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #232323;
+    text-align: center;
+}
+
+input {
+    border-image: none;
+    border: 1px solid #044971;
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid #FF7313;
+}
+
+.span {
+    display: block;
+    margin-bottom: 36px;
+    text-align: start;
+}
+
+.main-text a {
+    color: #FF7313;
+}
+
+.button {
+    padding: 15px 76px 16px 76px;
+    background: #044971;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #053d5e;
+}
