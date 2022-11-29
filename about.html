@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
                 <div class="banner__wrapp grid">
                     <div class="banner__items">
                         <h3 class="banner__item flex title">
-                            <a class="banner__link" href="#!">Bызов зaмеpщикa, БЕСПЛАТНО</a>
+                            <a class="banner__link" href="#submit-form">Bызов зaмеpщикa, БЕСПЛАТНО</a>
                             <a class="banner__link--hover" href="#submit-form">Оставить заявку</a>
                         </h3>
                         <h3 class="banner__item item--two flex title">
@@ -90,7 +91,11 @@
         <section class="works">
             <div class="container">
                 <h2 class="works__title title">Наши работы</h2>
-                <a href="#"><img class="works__banner" src="assets/images/slide3.jpg" alt=""></a>
+                <div class="banner_video flex">
+                    <video class="video" src="assets/images/video-20-11-22-05-23-11.mp4" autoplay muted loop>
+                    </video>
+                    <h2><a href="#">EURO_POL52</a></h2>
+                </div>
             </div>
         </section>
 
@@ -116,7 +121,7 @@
 
         <section class="form">
             <div class="container">
-                <h2 id="submit-form title">Оставить заявку</h2>
+                <h2 id="submit-form" class="title">Оставить заявку</h2>
                 <form action="">
                     <input type="text" placeholder="Имя">
                     <input type="tel" placeholder="Телефон">
