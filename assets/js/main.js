@@ -41,31 +41,3 @@ dots.forEach((item, indexDot)=> {
 });
 
 setInterval(nextSlide, 5000);
-
-/* Spoiler */
-const headers = document.querySelectorAll("[data-name='spoiler-title']");
-
-headers.forEach(function (item) {
-  item.addEventListener("click", headerClick);
-});
-
-function headerClick() {
-    if( !!this ) {
-        this.nextElementSibling.classList.remove('spoiler-body'); 
-    }
-    else {
-        this.nextElementSibling.classList.add('spoiler-body');
-    }
-}
-
-
-const sections = document.querySelectorAll("guarantee__wrapp");
-sections.forEach((section) => section.addEventListener('toggle', toggleAcordeon));
-
-function toggleAcordeon() {
-  this.open && sections.forEach((section) => {
-    if (section !== this && section.open) {
-      section.open = false;
-    }
-  });
-}
