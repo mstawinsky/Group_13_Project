@@ -1,12 +1,96 @@
+/* fonts */
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
+
+/* variables */
+:root {
+    --title-mb: 72px;
+    --section-mb: 108px;
+
+    --text-color: #232323;
+    --blue-color: #044971;
+    --orange-color: #ff7313;
+    --white-color: #ffffff;
+
+    --font-basic: 'Roboto', sans-serif;
+    --font-heading: 'Roboto Slab', serif;
+
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+    --font-weight-300: 300;
+
+    --font-size-42: 42px;
+    --font-size-32: 32px;
+    --font-size-22: 22px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
+
+    /* line-height: 130% or 23px */
+    --line-height-130: 130%;
+}
+
+
+
+/* main */
+
+/* дефолтные стили для страницы */
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box; /*&&&*/
+}
 
 body {
     margin: 0;
     padding: 0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+/* общий переиспользуемый контейнер */
+.container {
+    margin: auto;
+    width: 1140px;
 }
+
+/* utility-first */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* etc. */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1 {}
+
+h4,
+.main-text {}
+
+.main-text {}
+
+.title {}
+
+
+faq faq__main-title faq__content faq__desc faq__question faq__title faq__main-text faq__list faq__item faq__img request-link
