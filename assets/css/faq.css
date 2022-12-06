@@ -6,6 +6,9 @@ font-family: 'Roboto Slab', serif; */
 :root {
     --title-mb: 72px;
     --section-mb: 108px;
+    --content-mb: 72px;
+    --col-gap: 36px;
+    --row-gap: 60px;
 
     --text-color: #232323;
     --blue-color: #044971;
@@ -15,10 +18,15 @@ font-family: 'Roboto Slab', serif; */
     --font-basic: 'Roboto', sans-serif;
     --font-heading: 'Roboto Slab', serif;
 
+    /* bold */
     --font-weight-700: 700;
+    /* semibold */
     --font-weight-600: 600;
+    /* medium */
     --font-weight-500: 500;
+    /* regular */
     --font-weight-400: 400;
+    /* light */
     --font-weight-300: 300;
 
     --font-size-42: 42px;
@@ -40,21 +48,12 @@ font-family: 'Roboto Slab', serif; */
     box-sizing: border-box;
 }
 
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
-html {
-    box-sizing: border-box; /*&&&*/
-}
-
 body {
     margin: 0;
     padding: 0;
 }
 
-/* общий переиспользуемый контейнер */
+/* общий переиспользуемый div-контейнер */
 .container {
     margin: auto;
     width: 1140px;
@@ -65,12 +64,12 @@ body {
     display: flex;
 }
 
-.grid {
+/* .grid {
     display: grid;
-}
+} */
 
 /* etc. */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -81,16 +80,197 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+} */
+
+h1,
+h4,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {}
+/* faq__main-title */
+h1 {
+    margin-top: var(--section-mb);
+    margin-bottom: var(--title-mb);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-42);
+    line-height: var(--line-height-130);
+}
 
-h4,
-.main-text {}
+/* faq__title */
+h4 {
+    padding: 24px 24px 24px 24px;
+    font-family: var(--font-basic);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-130);
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
 
-.main-text {}
+/* section */
+.faq {
+    margin-bottom: var(--content-mb);
+}
 
-.title {}
+/* section, for orange background */
+.faq--mb {
+    margin-bottom: 36px;
+}
+
+/* section, orange background */
+.faq--color_orange {
+    /* background-color: rgba(255, 115, 19, 0.9); */
+    background: rgb(255, 115, 19);
+    background: linear-gradient(90deg, rgba(255, 115, 19, 1) 49%, rgba(255, 115, 19, 0) 50%, rgba(4, 73, 113, 1) 51%);
+    padding: 36px 0;
+    margin-bottom: 36px;
+}
+
+/* div faq__desc + img */
+.faq__content {
+    column-gap: var(--col-gap);
+}
+
+/* div с блоками вопросов 2-3 */
+.faq__desc {
+    flex-direction: column;
+    justify-content: space-between;
+    /* row-gap: 48px; */
+}
+
+/* div - блоки вопросов */
+.faq__question {
+    width: 552px;
+    transition: 0.3s;
+    box-shadow: 0 14px 28px rgba(4, 73, 113, 0.25), 0 10px 10px rgba(4, 73, 113, 0.22);
+    padding-bottom: 24px;
+
+}
+
+/* hover блоков вопросов */
+.faq__question:hover {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+/* p */
+.faq__main-text {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: var(--font-basic);
+    font-weight: var(--font-weight-300);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-130);
+    color: var(--text-color);
+}
+
+/* p - второй параграф */
+.faq__second-p {
+    margin-top: 12px;
+    padding-right: 24px;
+    padding-left: 24px;
+    font-family: var(--font-basic);
+    font-weight: var(--font-weight-300);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-130);
+    color: var(--text-color);
+}
+
+/* ul */
+.faq__list {
+    padding-top: 12px;
+    padding-left: 24px;
+    font-family: var(--font-basic);
+    font-weight: var(--font-weight-300);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-130);
+    color: var(--text-color);
+    list-style: none;
+}
+
+/* li */
+.faq__item {}
+
+/* img */
+.faq__img1 {
+    width: 552px;
+    height: 624px;
+    object-fit: cover;
+}
+
+.faq__img2 {
+    width: 552px;
+    height: 492px;
+    object-fit: cover;
+}
+
+.faq__img3 {
+    width: 552px;
+    height: 642px;
+    object-fit: cover;
+}
+
+.faq__img4 {
+    width: 552px;
+    height: 558px;
+    object-fit: cover;
+}
+
+.faq__img5 {
+    margin-right: -390px;
+    width: 942px;
+    height: 558px;
+    object-fit: cover;
+}
+
+.faq__img6 {
+    margin-left: -390px;
+    width: 942px;
+    height: 558px;
+    object-fit: cover;
+}
+
+/* span - телефон */
+.faq__main-text span {
+    font-weight: var(--font-weight-400);
+}
+
+/* a */
+.request-link {
+    font-weight: var(--font-weight-400);
+    color: var(--orange-color);
+    text-decoration: none;
+}
+
+/* a:hover */
+.request-link:hover {
+    color: var(--blue-color);
+}
 
 
-faq faq__main-title faq__content faq__desc faq__question faq__title faq__main-text faq__list faq__item faq__img request-link
+
+/* faq /section
+container /div
+faq__main-title /h1
+faq__content flex /div
+faq__desc flex /div
+faq__question /div
+faq__question:hover /hover
+faq__title /h4
+faq__main-text /p
+faq__list /ul
+faq__item /li
+faq__img /img
+faq--mb /section
+faq__second-p /p
+faq--color_orange /section
+faq__img5 /img
+faq__img6 /img
+span /span
+request-link /a
+request-link:hover /hover */
