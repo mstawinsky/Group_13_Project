@@ -53,10 +53,15 @@ body {
     padding: 0;
 }
 
+main {
+    overflow: hidden;
+}
+
 /* общий переиспользуемый div-контейнер */
 .container {
     margin: auto;
     width: 1140px;
+    /* overflow: hidden; */
 }
 
 /* utility-first */
@@ -123,9 +128,7 @@ h4 {
 
 /* section, orange background */
 .faq--color_orange {
-    /* background-color: rgba(255, 115, 19, 0.9); */
-    background: rgb(255, 115, 19);
-    background: linear-gradient(90deg, rgba(255, 115, 19, 1) 49%, rgba(255, 115, 19, 0) 50%, rgba(4, 73, 113, 1) 51%);
+    background: var(--orange-color);
     padding: 36px 0;
     margin-bottom: 36px;
 }
@@ -144,17 +147,34 @@ h4 {
 
 /* div - блоки вопросов */
 .faq__question {
+    background-color: #ffffff;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
     width: 552px;
-    transition: 0.3s;
     box-shadow: 0 14px 28px rgba(4, 73, 113, 0.25), 0 10px 10px rgba(4, 73, 113, 0.22);
     padding-bottom: 24px;
-
 }
 
 /* hover блоков вопросов */
+.faq__question::after {
+    content: '';
+    border-bottom: 3px solid var(--blue-color);
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
 .faq__question:hover {
+    color: var(--blue-color);
     transform: scale(1.1);
     cursor: default;
+}
+
+.faq__question:hover::after {
+    width: 100%;
 }
 
 /* p */
@@ -193,10 +213,43 @@ h4 {
     list-style: none;
 }
 
-/* li */
+/* ul li */
 .faq__item {}
 
+.faq__item--marker_ndash::before {
+    content: '\2013';
+    margin-right: 1ex;
+}
+
+.faq__list {
+    counter-reset: num 0;
+}
+
+.faq__item--marker_num::before {
+    counter-increment: num;
+    content: counter(num) ". ";
+}
+
+/* стиль текста - подчеркнутый */
+.text-underline {
+    border-bottom: 1px solid var(--text-color);
+}
+
 /* img */
+.zoom {
+    overflow: hidden;
+    cursor: default;
+}
+
+.zoom img {
+    transition: 0.3s;
+}
+
+/* hover картинок */
+.zoom:hover img {
+    transform: scale(1.2);
+}
+
 .faq__img1 {
     width: 552px;
     height: 624px;
@@ -260,17 +313,9 @@ faq__main-title /h1
 faq__content flex /div
 faq__desc flex /div
 faq__question /div
-faq__question:hover /hover
 faq__title /h4
 faq__main-text /p
 faq__list /ul
 faq__item /li
 faq__img /img
-faq--mb /section
 faq__second-p /p
-faq--color_orange /section
-faq__img5 /img
-faq__img6 /img
-span /span
-request-link /a
-request-link:hover /hover */
