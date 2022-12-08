@@ -10,6 +10,7 @@
 }
 
 
+
 /* variables */
 :root {
     --title-mb: 72px;
@@ -56,6 +57,11 @@
     box-sizing: border-box;
 }
 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -66,10 +72,10 @@ main {
 }
 
 /* кнопкa Вверх */
-.up-button {
+.btn-up {
     position: fixed;
-    right: 5%;
-    bottom: 5%;
+    right: 0.5%;
+    bottom: 2%;
     font-family: var(--font-basic);
     font-weight: var(--font-weight-300);
     font-size: var(--font-size-16);
@@ -77,16 +83,17 @@ main {
     color: var(--white-color);
     text-decoration: none;
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    background: var(--blue-color);
+    height: 85px;
+    width: 85px;
+    background: rgba(4, 73, 113, 0.7);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: default;
+    z-index: 999;
 }
 
-.up-button::before {
+.btn-up::before {
     content: '';
     width: 20px;
     height: 20px;
@@ -95,15 +102,14 @@ main {
     transform: rotate(-45deg);
 }
 
-.up-button:hover {
-    background: rgba(4, 73, 113, 0.9);
+.btn-up:hover {
+    background: var(--blue-color);
 }
 
 /* общий переиспользуемый div-контейнер */
 .container {
     margin: auto;
-    width: 1140px;
-    /* overflow: hidden; */
+    max-width: 1140px;
 }
 
 /* utility-first */
@@ -147,19 +153,14 @@ h4 {
 
 /* section */
 .faq {
-    margin-bottom: var(--content-mb);
-}
-
-/* section, for orange background */
-.faq--mb {
-    margin-bottom: 36px;
+    margin: 72px 0;
 }
 
 /* section, orange background */
 .faq--color_orange {
     background: var(--orange-color);
+    margin: -36px 0;
     padding: 36px 0;
-    margin-bottom: 36px;
 }
 
 /* div faq__desc + img */
@@ -274,6 +275,10 @@ h4 {
 
 .zoom img {
     transition: 0.3s;
+}
+
+.zoom5-6 {
+    cursor: default;
 }
 
 /* hover картинок */
