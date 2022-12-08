@@ -1,6 +1,14 @@
-/* fonts */
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif; */
+@keyframes show {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* variables */
 :root {
@@ -69,24 +77,11 @@ main {
     display: flex;
 }
 
-/* .grid {
+.grid {
     display: grid;
-} */
+}
 
 /* etc. */
-/* .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} */
-
 h1,
 h4,
 p,
@@ -113,7 +108,7 @@ h4 {
     font-size: var(--font-size-18);
     line-height: var(--line-height-130);
     color: var(--white-color);
-    background-color: var(--blue-color);
+    background: linear-gradient(90deg, rgba(4, 73, 113, 1) 0%, rgba(4, 73, 113, 0.8) 100%);
 }
 
 /* section */
@@ -135,14 +130,16 @@ h4 {
 
 /* div faq__desc + img */
 .faq__content {
-    column-gap: var(--col-gap);
+    grid-column-gap: var(--col-gap);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* div с блоками вопросов 2-3 */
 .faq__desc {
     flex-direction: column;
     justify-content: space-between;
-    /* row-gap: 48px; */
+    animation: show 2s;
+    background: linear-gradient(rgba(4, 73, 113, 1) 0%, rgba(4, 73, 113, 1) 100%)no-repeat center/2px 100%;
 }
 
 /* div - блоки вопросов */
@@ -169,7 +166,7 @@ h4 {
 
 .faq__question:hover {
     color: var(--blue-color);
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: default;
 }
 
@@ -247,7 +244,7 @@ h4 {
 
 /* hover картинок */
 .zoom:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .faq__img1 {
