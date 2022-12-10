@@ -37,3 +37,14 @@ document.querySelector('.slider-next').addEventListener('click', function() {
 function rollSlider() {
 	sliderLine.style.transform = 'translate(-'+count*width+'px)';
 }
+
+const sliderRound = document.querySelectorAll('[data-slide]');
+for (const round of sliderRound) {
+	round.addEventListener('click', function () {
+		let countRound = round.getAttribute("data-slide");
+		// round.classList.remove('input--active');
+		// round.classList.add('input--active');
+		count = countRound;
+		rollSlider();
+	})
+}

@@ -66,11 +66,11 @@
           </h2>
           <div class="works__examples-slider slider">
             <div class="slider-line flex">
-              <input type="radio" name="slider__radio" id="radio_1" />
+              <!-- <input type="radio" name="slider__radio" id="radio_1" />
               <input type="radio" name="slider__radio" id="radio_2" />
               <input type="radio" name="slider__radio" id="radio_3" />
               <input type="radio" name="slider__radio" id="radio_4" />
-              <input type="radio" name="slider__radio" id="radio_5" />
+              <input type="radio" name="slider__radio" id="radio_5" /> -->
               <div class="slide first">
                 <img src="assets/images/works/slider/1.jpg" alt="1" />
               </div>
@@ -89,11 +89,15 @@
               </div>
             </div>
             <div class="navigation-manual flex">
-              <label for="radio_1" class="manual-btn"></label>
-              <label for="radio_2" class="manual-btn"></label>
-              <label for="radio_3" class="manual-btn"></label>
-              <label for="radio_4" class="manual-btn"></label>
-              <label for="radio_5" class="manual-btn"></label>
+              <label
+                for="radio_1"
+                class="manual-btn input--active"
+                data-slide="0"
+              ></label>
+              <label for="radio_2" class="manual-btn" data-slide="1"></label>
+              <label for="radio_3" class="manual-btn" data-slide="2"></label>
+              <label for="radio_4" class="manual-btn" data-slide="3"></label>
+              <label for="radio_5" class="manual-btn" data-slide="4"></label>
             </div>
             <button class="slider-prev button">
               <img src="assets/images/works/slider_arrow.svg" alt="Prev" />
