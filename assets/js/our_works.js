@@ -1,7 +1,9 @@
-let imagePosition = 0;
+
+'use strict';
+
 const images = document.querySelectorAll('.slider .slider-line img');
 const sliderLine  = document.querySelector('.slider-line');
-let count =0;
+let count = 0;
 let width = null;
 
 function init() {
