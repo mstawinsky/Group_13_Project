@@ -1,23 +1,24 @@
 /* variables */
 :root {
-    --color-orange: #FF7313;
-    --color-blue: #044971;
-    --color-white: #FFFFFF;
+    --orange-color: #FF7313;
+    --blue-color: #044971;
+    --white-color: #FFFFFF;
+    --text-color: #232323;
 
-    --text-size-h1: 42px;
-    --text-size-h2: 32px;
-    --text-size-h3: 22px;
-    --text-size-form: 18px;
-    --text-size-main: 16px;
+    --text-size-42: 42px;
+    --text-size-32: 32px;
+    --text-size-22: 22px;
+    --text-size-18: 18px;
+    --text-size-16: 16px;
     
-    --font-weight-extrabold: 700;
-    --font-weight-bold: 600;
-    --font-weight-medium: 500;
-    --font-weight-form: 400;
-    --font-weight-light: 300;
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+    --font-weight-300: 300;
 
-    --font-basic-roboto: 'Roboto', sans-serif;
-    --font-basic-robotoSlab: 'Roboto Slab', serif;
+    --font-basic: 'Roboto', sans-serif;
+    --font-heading: 'Roboto Slab', serif;
 }
 
 
@@ -25,7 +26,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-basic-roboto);
+    font-family: var(--font-basic);
 }
 
 .container {
@@ -64,18 +65,18 @@ body {
     padding-right: 76px;
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: var(--text-size-main);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-white);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-600);
+    color: var(--white-color);
     text-decoration: none;
 }
 
 .primary-btn--orange {
-    background-color: var(--color-orange);
+    background-color: var(--orange-color);
 }
 
 .primary-btn--blue {
-    background-color: var(--color-blue);
+    background-color: var(--blue-color);
 }
 
 /*header*/
@@ -111,7 +112,7 @@ body {
 }
 
 .main-menu__list--text {
-    font-size: var(--text-size-form);
+    font-size: var(--text-size-18);
     line-height: 130%;
 }
 
@@ -119,14 +120,14 @@ body {
     padding-top: 16px;
     padding-bottom: 22px;
     transition:  0.3s ease;
-    background-color: var(--color-white);
+    background-color: var(--white-color);
 }
 .header-bot-part__text {
-    font-size: var(--text-size-form);
+    font-size: var(--text-size-18);
 }
 
 .header-bot-part__number {
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-500);
 }
 
 .header__worktime {
@@ -143,7 +144,7 @@ body {
     border-bottom: 1px solid #044971;
     box-shadow: 0px 0px 8px #000000;
     transition:  0.3s ease;
-    background-color: var(--color-white);
+    background-color: var(--white-color);
 }
 
 /* main-banner */
@@ -164,21 +165,21 @@ body {
 }
 
 .main-banner--text {
-    color: var(--color-white);
-    font-family: var(--font-basic-robotoSlab);
+    color: var(--white-color);
+    font-family: var(--font-heading);
 }
 
 .main-banner__title {
-    font-size: var(--text-size-h1);
-    font-weight: var(--font-weight-extrabold);
+    font-size: var(--text-size-42);
+    font-weight: var(--font-weight-700);
     padding-top: 108px;
     line-height: 55px;
     margin: 0;
 }
 
 .main-banner__place {
-    font-size: var(--text-size-h3);
-    font-weight: var(--font-weight-medium);
+    font-size: var(--text-size-22);
+    font-weight: var(--font-weight-500);
     padding-top: 24px;
     line-height: 29px;
     margin: 0;
@@ -188,7 +189,7 @@ body {
     float: right;
     padding-top: 332px;
     font-size: 54px;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-600);
     letter-spacing: 0.03em;
     line-height: 70px;
     margin: 0;
@@ -200,9 +201,9 @@ body {
     margin: 0;
     text-align: center;
     padding-top: 108px;
-    font-size: var(--text-size-h2);
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-basic-robotoSlab);
+    font-size: var(--text-size-32);
+    font-weight: var(--font-weight-600);
+    font-family: var(--font-heading);
 }
 
 .advantages-grid {
@@ -220,14 +221,14 @@ body {
 
 .advantages-grid__bot-block {
     height: 60px;
-    background-color: var(--color-orange);
+    background-color: var(--orange-color);
     position: relative;
 }
 
 .advantages-grid__text {
     margin: 0;
-    font-size: var(--text-size-main);
-    font-weight: var(--font-weight-light);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-300);
     line-height: 21px;
     position: absolute;
     top: 50%;
@@ -253,7 +254,7 @@ body {
 .schemework__figure {
     width: 240px;
     height: 240px;
-    background-color: var(--color-blue);
+    background-color: var(--blue-color);
     border-radius: 50%;
     position: absolute;
     left: 52px;
@@ -284,14 +285,14 @@ body {
 
 .ellypse__text {
     margin: 0;
-    font-size: var(--text-size-h3);
-    font-weight: var(--font-weight-light);
-    color: var(--color-white);
+    font-size: var(--text-size-22);
+    font-weight: var(--font-weight-300);
+    color: var(--white-color);
 }
 
 
 .schemework__text-block {
-    background-color: var(--color-blue);
+    background-color: var(--blue-color);
     position: absolute;
     width: 0;
     right: 0;
@@ -300,9 +301,9 @@ body {
 }
 
 .schemework__list {
-    font-size: var(--text-size-main);
-    font-weight: var(--font-weight-light);
-    color: var(--color-white);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-300);
+    color: var(--white-color);
     list-style-type: decimal;
     height: 185px;
     margin: 0;
@@ -332,13 +333,13 @@ body {
     padding-top: 108px;
 }
 .calculator__wrapper {
-    background-color: var(--color-orange);
+    background-color: var(--orange-color);
 }
 
 .calculator__title {
-    font-family: var(--font-basic-robotoSlab);
-    font-size: var(--text-size-h2);
-    font-weight: var(--font-weight-bold);
+    font-family: var(--font-heading);
+    font-size: var(--text-size-32);
+    font-weight: var(--font-weight-600);
 }
 
 .slider {
@@ -350,7 +351,7 @@ body {
 
 .slider__pos {
     position: relative;
-    background-color: var(--color-orange);
+    background-color: var(--orange-color);
     border-radius: 8px;
     width: 610px;
     height: 24px;
@@ -361,8 +362,8 @@ output {
     left: -20px;
     top: -40px;
     padding: 7px 10px;
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: var(--blue-color);
+    color: var(--white-color);
     border-radius: 50%;
 }
 
@@ -371,7 +372,7 @@ output {
     width: 600px;
     height: 10px;
     left: 3px;
-    background-color: var(--color-blue);
+    background-color: var(--blue-color);
     -webkit-appearance: none;
     outline: none;
     border-radius: 8px;
@@ -382,7 +383,7 @@ output {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: var(--color-blue);
+    background-color: var(--blue-color);
 }
 
 
@@ -586,30 +587,30 @@ transition: all 1s ease;
 }
 
 .main-menu__list--footer-text a{
-    color: var(--color-white);
-    font-size: var(--text-size-form);
+    color: var(--white-color);
+    font-size: var(--text-size-18);
     line-height: 130%;
 }
 
 .footer-bot-part__text{
     margin: 0;
-    font-size: var(--text-size-main);
-    font-weight: var(--font-weight-light);
-    color: var(--color-white);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-300);
+    color: var(--white-color);
 }
 
 .footer-bot-part__link {
     text-decoration: none;
-    font-size: var(--text-size-main);
-    font-weight: var(--font-weight-light);
-    color: var(--color-orange);
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-300);
+    color: var(--orange-color);
 }
 
 .footer-bot-part__number {
     margin: 0;
-    font-size: var(--text-size-form);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-white);
+    font-size: var(--text-size-18);
+    font-weight: var(--font-weight-500);
+    color: var(--white-color);
 }
 
 .footer__icons {
