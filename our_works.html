@@ -32,11 +32,11 @@
         <div class="works__main-container container">
           <h1 class="works__title title">Наши работы</h1>
           <div class="works__main-banner">
-            <img
+            <!-- <img
               class="works__main-image"
               src="assets/images/works/works_banner.jpg"
               alt=""
-            />
+            /> -->
             <div class="works__main-form application">
               <form class="application__form" action="#">
                 <h2 class="application__title title">Оставить заявку</h2>
@@ -66,11 +66,38 @@
           </h2>
           <div class="works__examples-slider slider">
             <div class="slider-line flex">
-              <img src="assets/images/works/slider/1.jpg" alt="1" />
-              <img src="assets/images/works/slider/2.jpg" alt="2" />
-              <img src="assets/images/works/slider/3.jpg" alt="3" />
-              <img src="assets/images/works/slider/4.jpg" alt="4" />
-              <img src="assets/images/works/slider/5.jpg" alt="5" />
+              <!-- <input type="radio" name="slider__radio" id="radio_1" />
+              <input type="radio" name="slider__radio" id="radio_2" />
+              <input type="radio" name="slider__radio" id="radio_3" />
+              <input type="radio" name="slider__radio" id="radio_4" />
+              <input type="radio" name="slider__radio" id="radio_5" /> -->
+              <div class="slide first">
+                <img src="assets/images/works/slider/1.jpg" alt="1" />
+              </div>
+
+              <div class="slide">
+                <img src="assets/images/works/slider/2.jpg" alt="2" />
+              </div>
+              <div class="slide">
+                <img src="assets/images/works/slider/3.jpg" alt="3" />
+              </div>
+              <div class="slide">
+                <img src="assets/images/works/slider/4.jpg" alt="4" />
+              </div>
+              <div class="slide">
+                <img src="assets/images/works/slider/5.jpg" alt="5" />
+              </div>
+            </div>
+            <div class="navigation-manual flex">
+              <label
+                for="radio_1"
+                class="manual-btn input--active"
+                data-slide="0"
+              ></label>
+              <label for="radio_2" class="manual-btn" data-slide="1"></label>
+              <label for="radio_3" class="manual-btn" data-slide="2"></label>
+              <label for="radio_4" class="manual-btn" data-slide="3"></label>
+              <label for="radio_5" class="manual-btn" data-slide="4"></label>
             </div>
             <button class="slider-prev button">
               <img src="assets/images/works/slider_arrow.svg" alt="Prev" />
