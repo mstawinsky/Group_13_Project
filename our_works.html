@@ -4,30 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EuroPol</title>
-    <!-- Variables css -->
-    <link rel="stylesheet" href="assets/css/variables.css" />
-    <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/our_works.css" />
-    <!-- Fonts -->
+    <title>EUROPOL-Полусухая стяжка пола НН-Наши работы</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header"></header>
 
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/our_works.css" />
+  </head>
+
+  <body class="page">
     <!-- ==================================Our works====================================== -->
 
+    <!-- =================================Main banner===================================== -->
+    <header class="header">
+      <div class="header__top-part">
+        <div class="container d-flex-center">
+          <a class="logo-link" href="./index.html"
+            ><img class="logo" src="assets/images/logo.svg" alt=""
+          /></a>
+          <nav class="main-menu">
+            <ul class="main-menu__list main-menu__list--text d-flex-center">
+              <li class="main-menu__item">
+                <a href="./index.html">Главная</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./about.html">О нас</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./our_works.html">Наши работы</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./faq.html">Вопрос-Ответ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header__bot-part header-bot-part">
+        <div class="container d-flex-center">
+          <div class="header__worktime d-flex">
+            <img src="assets/images/AroundTheClock-icon.svg" alt="" />
+            <p class="header-bot-part__text">
+              Круглосуточно <br />Без выходных
+            </p>
+          </div>
+          <div class="header__feedback">
+            <p class="header-bot-part__text">
+              Позвоните нам: <br /><span class="header-bot-part__number"
+                >+7 (800) 123-45-67</span
+              >
+            </p>
+          </div>
+          <a class="primary-btn primary-btn--orange" href="#"
+            >Оставить заявку</a
+          >
+        </div>
+      </div>
+    </header>
+
     <main class="works">
-      <!-- =================================Main banner===================================== -->
       <section class="works__main">
         <div class="works__main-container container">
           <h1 class="works__title title">Наши работы</h1>
@@ -57,7 +108,7 @@
             Наша фотогалерея выполненных работ
           </h2>
           <div class="works__examples-slider slider">
-            <div class="slider-line flex">
+            <div class="slider-line d-flex-center">
               <div class="slide first">
                 <img src="assets/images/works/slider/1.jpg" alt="1" />
               </div>
@@ -75,7 +126,7 @@
                 <img src="assets/images/works/slider/5.jpg" alt="5" />
               </div>
             </div>
-            <div class="navigation-manual flex">
+            <div class="navigation-manual d-flex-center">
               <div
                 for="radio_1"
                 class="manual-btn input--active"
@@ -99,7 +150,7 @@
       <section class="works__reviews">
         <div class="works__reviews-container container">
           <h2 class="works__reviews-title title">Отзывы о нашей работе</h2>
-          <div class="works__reviews-flex flex">
+          <div class="works__reviews-flex d-flex-center">
             <div class="works__reviews-item reviews-item">
               <div class="reviews__item-title">
                 <h3 class="title">Иван Петрович</h3>
@@ -146,7 +197,57 @@
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__top-part d-flex-center">
+            <a class="logo-link" href="./index.html"
+              ><img class="logo" src="assets/images/logo.svg" alt=""
+            /></a>
+            <nav class="main-menu">
+              <ul
+                class="main-menu__list main-menu__list--footer-text d-flex-center"
+              >
+                <li class="main-menu__item">
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li class="main-menu__item">
+                  <a href="./about.html">О нас</a>
+                </li>
+                <li class="main-menu__item">
+                  <a href="./our_works.html">Наши работы</a>
+                </li>
+                <li class="main-menu__item">
+                  <a href="./faq.html">Вопрос-Ответ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer__bot-part footer-bot-part">
+            <div class="d-flex-center">
+              <div class="footer__politics">
+                <p class="footer-bot-part__text">
+                  2008-2023 Все права защищены
+                </p>
+                <a class="footer-bot-part__link" href=""
+                  >Политика конфидециальности</a
+                >
+              </div>
+
+              <div class="footer__feedback">
+                <p class="footer-bot-part__number">+7 (800) 123-45-67</p>
+              </div>
+
+              <div class="footer__icons">
+                <a href=""><img src="assets/images/vk-icon.svg" alt="" /></a>
+                <a href=""><img src="assets/images/inst-icon.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="assets/js/our_works.js"></script>
   </body>
 </html>
