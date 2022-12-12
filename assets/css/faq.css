@@ -224,7 +224,7 @@ mark {
 
 /* etc. */
 h1,
-h4,
+h2,
 p,
 ul {
     margin: 0;
@@ -242,7 +242,7 @@ h1 {
 }
 
 /* faq__title */
-h4 {
+h2 {
     padding: 24px 24px 24px 24px;
     font-family: var(--font-basic);
     font-weight: var(--font-weight-500);
