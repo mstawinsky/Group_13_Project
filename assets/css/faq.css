@@ -24,8 +24,9 @@
     --orange-color: #ff7313;
     --white-color: #ffffff;
 
-    --font-basic: 'Roboto', sans-serif;
-    --font-heading: 'Roboto Slab', serif;
+    /* +font-fallback */
+    --font-basic: 'Roboto', sans-serif, 'Arial';
+    --font-heading: 'Roboto Slab', serif, 'Arial';
 
     /* bold */
     --font-weight-700: 700;
