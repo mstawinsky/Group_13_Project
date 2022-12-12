@@ -3,6 +3,7 @@
 
 const images = document.querySelectorAll('.slider .slider-line img');
 const sliderLine  = document.querySelector('.slider-line');
+const sliderRound = document.querySelectorAll('[data-slide]');
 let count = 0;
 let width = null;
 
@@ -23,6 +24,14 @@ document.querySelector('.slider-prev').addEventListener('click', function() {
 	if(count < 0){
 		count = images.length - 1;
 	}
+	for(let i = 0; i < sliderRound.length; i++ ) {
+		sliderRound[i].classList.remove('input--active');
+	}
+	for(let j = 0; j < sliderRound.length; j++ ) {
+			if (j == count) {
+					sliderRound[j].classList.add('input--active');
+			}
+		}
 	rollSlider();
 });
 
@@ -31,6 +40,14 @@ document.querySelector('.slider-next').addEventListener('click', function() {
 	if(count >= images.length){
 		count = 0;
 	}
+	for(let i = 0; i < sliderRound.length; i++ ) {
+		sliderRound[i].classList.remove('input--active');
+	}
+	for(let j = 0; j < sliderRound.length; j++ ) {
+		if (j == count) {
+			sliderRound[j].classList.add('input--active');
+		}
+	}
 	rollSlider();
 });
 
@@ -38,13 +55,17 @@ function rollSlider() {
 	sliderLine.style.transform = 'translate(-'+count*width+'px)';
 }
 
-const sliderRound = document.querySelectorAll('[data-slide]');
+
+
+
+
 for (const round of sliderRound) {
 	round.addEventListener('click', function () {
+		for(let i = 0; i < sliderRound.length; i++ ) {
+			sliderRound[i].classList.remove('input--active');}
 		let countRound = round.getAttribute("data-slide");
-		// round.classList.remove('input--active');
-		// round.classList.add('input--active');
 		count = countRound;
-		rollSlider();
+		rollSlider();		
+		round.classList.add('input--active');
 	})
 }

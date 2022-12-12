@@ -120,8 +120,8 @@ transform: scale(1.2);
 }
 .works__main-form {
 	position: relative;
-	top: 80%;
-	left: 20%;
+	/* top: 80%;
+	left: 20%;  */
 	max-width: 350px;
 }
 
@@ -146,6 +146,8 @@ transform: scale(1.2);
 
 .button {}
 
+/* ==========================Наши работы============================= */
+
 .works__examples {
 	margin-bottom: 30px;
 }
@@ -154,7 +156,7 @@ transform: scale(1.2);
 .works__examples-title {}
 
 .works__examples-slider {
-	/* max-height: 90vh; */
+	max-height: 90vh;
 	position: relative;
 	/* transform: translate(-50%, -50%); */
 }
@@ -217,29 +219,12 @@ transform: scale(1.2);
 }
 
 .slide img{
-width: 100%;
-transition: all 1s ease;
+	width: 100%;
+	transition: all 1s ease;
 }
 
 .input--active {
 	background-color: #FF7313;
-}
-
-
-#radio_1:checked ~ .first {
-	margin-left: 0;
-}
-#radio_2:checked ~ .first {
-	margin-left: -20%; 
-}
-#radio_3:checked ~ .first {
-	margin-left: -40%; 
-}
-#radio_4:checked ~ .first {
-	margin-left: -60%; 
-}
-#radio_5:checked ~ .first {
-	margin-left: -80%; 
 }
 
 .slider-prev {
@@ -289,7 +274,7 @@ transition: all 1s ease;
 	opacity: 1;
 	transform: scale(1.1);
 }
-
+/* ============================Отзывы================================== */
 .works__reviews {
 	background-color: #044971;
 }
@@ -341,8 +326,8 @@ transition: all 1s ease;
 }
 .reviews__item-image {
 	position: relative;
-	width: 150px;
-	height: 150px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	background-color: #fff;
 	border: 2px solid #000;
