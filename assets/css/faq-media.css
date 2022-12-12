@@ -3,8 +3,8 @@
     .btn-up {
         right: 0.5%;
         bottom: 1%;
-        height: 40px;
         width: 40px;
+        height: 40px;
     }
 
     .btn-up span {
@@ -92,8 +92,8 @@
     }
 
     .faq__desc {
-        row-gap: 24px;
         margin-bottom: 24px;
+        row-gap: 24px;
     }
 
     .faq {
@@ -127,9 +127,9 @@
     }
 
     .faq__desc {
-        background: none;
-        row-gap: 36px;
         margin-bottom: 36px;
+        row-gap: 36px;
+        background: none;
     }
 
 }

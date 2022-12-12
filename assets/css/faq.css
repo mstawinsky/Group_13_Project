@@ -19,6 +19,23 @@
     --col-gap: 36px;
     --row-gap: 60px;
 
+    /* 4
+    8
+    16
+    24
+    32
+    40
+    48
+
+    6
+    12
+    24
+    36
+    48
+    60
+    72
+    108 */
+
     --text-color: #232323;
     --blue-color: #044971;
     --orange-color: #ff7313;
@@ -72,136 +89,6 @@ main {
     overflow: hidden;
 }
 
-/* кнопкa Вверх */
-.btn-up {
-    position: fixed;
-    right: 0.5%;
-    bottom: 2%;
-    font-family: var(--font-basic);
-    font-weight: var(--font-weight-300);
-    font-size: var(--font-size-16);
-    line-height: var(--line-height-130);
-    color: var(--white-color);
-    text-decoration: none;
-    border-radius: 50%;
-    height: 85px;
-    width: 85px;
-    background: rgba(4, 73, 113, 0.7);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: default;
-    z-index: 999;
-}
-
-.btn-up::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid var(--white-color);
-    border-right: 3px solid var(--white-color);
-    transform: rotate(-45deg);
-}
-
-.btn-up:hover {
-    background: var(--blue-color);
-}
-
-/* кнопка Оставить заявку */
-.primary-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding-left: 76px;
-    padding-right: 76px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: var(--text-size-16);
-    font-weight: var(--font-weight-600);
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.primary-btn--orange {
-    background-color: var(--orange-color);
-}
-
-mark {
-    color: var(--white-color);
-    background-color: var(--blue-color);
-}
-
-/*header*/
-.header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-
-.header__top-part {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
-}
-
-.logo {
-    height: 84px;
-    width: 382px;
-}
-
-.logo-link {
-    height: 84px;
-}
-
-.main-menu__list {
-    list-style: none;
-    column-gap: 96px;
-}
-
-.main-menu__list a {
-    text-decoration: none;
-    color: black;
-}
-
-.main-menu__list--text {
-    font-size: var(--text-size-18);
-    line-height: var(--line-height-130);
-}
-
-.header__bot-part {
-    padding-top: 16px;
-    padding-bottom: 22px;
-    transition: 0.3s ease;
-    background-color: var(--white-color);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
-}
-
-.header-bot-part__text {
-    font-size: var(--text-size-18);
-}
-
-.header-bot-part__number {
-    font-weight: var(--font-weight-500);
-}
-
-.header__worktime {
-    column-gap: 24px;
-}
-
-.scrolled .header__bot-part {
-    opacity: 0;
-    transform: translateY(-200%);
-    transition: 0.3s ease;
-}
-
-.scrolled .header__top-part {
-    border-bottom: 1px solid #044971;
-    box-shadow: 0px 0px 8px #000000;
-    transition: 0.3s ease;
-    background-color: var(--white-color);
-}
-
 /* общий переиспользуемый div-контейнер */
 .container {
     margin: auto;
@@ -253,6 +140,151 @@ h2 {
     background: linear-gradient(90deg, rgba(4, 73, 113, 1) 0%, rgba(4, 73, 113, 0.8) 100%);
 }
 
+img {
+    display: block;
+}
+
+/* стили текста - выделенный, подчеркнутый, жирный (телефон) */
+mark {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+.text-underline {
+    border-bottom: 1px solid var(--text-color);
+}
+
+/* span - телефон */
+.phone {
+    font-weight: var(--font-weight-400);
+}
+
+/* кнопкa Вверх */
+.btn-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    width: 85px;
+    font-family: var(--font-basic);
+    font-weight: var(--font-weight-300);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-130);
+    color: var(--white-color);
+    background: rgba(4, 73, 113, 0.7);
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: default;
+    z-index: 999;
+}
+
+.btn-up::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid var(--white-color);
+    border-right: 3px solid var(--white-color);
+    transform: rotate(-45deg);
+}
+
+.btn-up:hover {
+    background: var(--blue-color);
+}
+
+/* кнопка Оставить заявку */
+.primary-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: var(--text-size-16);
+    font-weight: var(--font-weight-600);
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.primary-btn--orange {
+    background-color: var(--orange-color);
+}
+
+/*header*/
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__top-part {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    width: 382px;
+    height: 84px;
+}
+
+.logo-link {
+    height: 84px;
+}
+
+.main-menu__list {
+    column-gap: 96px;
+    list-style: none;
+}
+
+.main-menu__list a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-menu__list--text {
+    font-size: var(--text-size-18);
+    line-height: var(--line-height-130);
+}
+
+.header__bot-part {
+    padding-top: 16px;
+    padding-bottom: 22px;
+    background-color: var(--white-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease;
+}
+
+.header-bot-part__text {
+    font-size: var(--text-size-18);
+}
+
+.header-bot-part__number {
+    font-weight: var(--font-weight-500);
+}
+
+.header__worktime {
+    column-gap: 24px;
+}
+
+.scrolled .header__bot-part {
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: 0.3s ease;
+}
+
+.scrolled .header__top-part {
+    background-color: var(--white-color);
+    border-bottom: 1px solid #044971;
+    box-shadow: 0px 0px 8px #000000;
+    transition: 0.3s ease;
+
+}
+
 /* section */
 .faq {
     margin: 72px 0;
@@ -260,9 +292,9 @@ h2 {
 
 /* section, orange background */
 .faq--color_orange {
-    background: var(--orange-color);
     margin: -36px 0;
     padding: 36px 0;
+    background: var(--orange-color);
 }
 
 /* div faq__desc + img */
@@ -275,29 +307,28 @@ h2 {
 .faq__desc {
     flex-direction: column;
     justify-content: space-between;
-    animation: show 2s;
     background: linear-gradient(rgba(4, 73, 113, 1) 0%, rgba(4, 73, 113, 1) 100%)no-repeat center/2px 100%;
+    animation: show 2s;
 }
 
 /* div - блоки вопросов */
 .faq__question {
-    background-color: #ffffff;
     position: relative;
+    padding-bottom: 24px;
+    background-color: #ffffff;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
-    /* width: 552px; */
     box-shadow: 0 14px 28px rgba(4, 73, 113, 0.25), 0 10px 10px rgba(4, 73, 113, 0.22);
-    padding-bottom: 24px;
 }
 
 /* hover блоков вопросов */
 .faq__question::after {
     content: '';
-    border-bottom: 3px solid var(--blue-color);
-    width: 0;
     position: absolute;
+    width: 0;
     left: 0;
     bottom: -3px;
+    border-bottom: 3px solid var(--blue-color);
     transition: width 0.3s ease;
 }
 
@@ -364,11 +395,6 @@ h2 {
     content: counter(num) ". ";
 }
 
-/* стиль текста - подчеркнутый */
-.text-underline {
-    border-bottom: 1px solid var(--text-color);
-}
-
 /* img */
 .zoom {
     overflow: hidden;
@@ -426,15 +452,6 @@ h2 {
     object-fit: cover;
 }
 
-/* span - телефон */
-.phone {
-    font-weight: var(--font-weight-400);
-}
-
-img {
-    display: block;
-}
-
 /* a */
 .request-link {
     font-weight: var(--font-weight-400);
@@ -473,22 +490,22 @@ img {
 
 .footer-bot-part__text {
     margin: 0;
-    font-size: var(--text-size-16);
     font-weight: var(--font-weight-300);
+    font-size: var(--text-size-16);
     color: var(--white-color);
 }
 
 .footer-bot-part__link {
-    text-decoration: none;
-    font-size: var(--text-size-16);
     font-weight: var(--font-weight-300);
+    font-size: var(--text-size-16);
     color: var(--orange-color);
+    text-decoration: none;
 }
 
 .footer-bot-part__number {
     margin: 0;
-    font-size: var(--text-size-18);
     font-weight: var(--font-weight-500);
+    font-size: var(--text-size-18);
     color: var(--white-color);
 }
 
