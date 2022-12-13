@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1140px;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    margin: 108px 0;
+    font-family: 'Roboto Slab', serif, 'Arial';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 130%;
+}
