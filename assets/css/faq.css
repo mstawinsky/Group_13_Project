@@ -125,6 +125,7 @@ img {
     display: block;
 }
 
+
 /* стили текста - выделенный, подчеркнутый, жирный (телефон) */
 mark {
     color: var(--white-color);
@@ -488,7 +489,6 @@ mark {
 .footer-bot-part__number {
     margin-left: var(--m36);
     font-family: var(--font-basic);
-    font-weight: var(--font-weight-500);
     font-size: var(--font-size-18);
     line-height: var(--line-height-130);
     color: var(--white-color);
