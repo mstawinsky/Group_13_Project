@@ -1,3 +1,11 @@
+/* variables */
+:root {
+    --m36: 36px;
+    --m24: 24px;
+    --m12: 12px;
+}
+
+
 @media screen and (max-width: 1366px) {
 
     .btn-up {
@@ -60,7 +68,7 @@
     }
 
     .faq__content {
-        grid-column-gap: 24px;
+        grid-column-gap: var(--m24);
     }
 
 }
@@ -80,7 +88,7 @@
     .faq__img5,
     .faq__img6 {
         width: 100%;
-        margin-bottom: 12px;
+        margin-bottom: var(--m12);
     }
 
     .faq__content {
@@ -92,8 +100,8 @@
     }
 
     .faq__desc {
-        margin-bottom: 24px;
-        row-gap: 24px;
+        margin-bottom: var(--m24);
+        row-gap: var(--m24);
     }
 
     .faq {
@@ -127,8 +135,8 @@
     }
 
     .faq__desc {
-        margin-bottom: 36px;
-        row-gap: 36px;
+        margin-bottom: var(--m36);
+        row-gap: var(--m36);
         background: none;
     }
 
