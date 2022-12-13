@@ -244,6 +244,31 @@ body {
     text-align: center;
 }
 
+.advantages-grid__item {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.advantages-grid__item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    border-bottom: 3px solid var(--blue-color);
+    transition: width 0.3s ease;
+}
+
+.advantages-grid__item:hover {
+    color: var(--blue-color);
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.advantages-grid__item:hover::after {
+    width: 100%;
+}
+
 /* schemework */
 
 .schemework {
@@ -395,7 +420,7 @@ output {
 /* slider. Слайдер Александра*/
 .materials__title {
     padding-top: 108px;
-    font-size: var(--text-size-32);
+    font-size: var(--font-size-32);
     font-weight: var(--font-weight-600);
     font-family: var(--font-heading);
 }
