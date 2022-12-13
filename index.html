@@ -146,8 +146,8 @@
                         <option value="90">90мм</option>
                     </select></p>
                 </form>
-                <div class="slider">
-                    <div class="slider__pos">
+                <div class="calculator__slider">
+                    <div class="calculator__slider-pos">
                         <output for="calculator__range" class="milimetr">30</output>
                         <input class="calculator__range" type="range" min="30" max="350" value="30" step="1">
                     </div>
@@ -156,44 +156,43 @@
         </div>
     </section>
 
-    <section class="works__examples">
-        <div class="works__examples-container container">
-          <h2 class="works__examples-title title">
-            Мы используем только качественные материалы
-          </h2>
-          <div class="works__examples-slider slider">
+    <section class="materials">
+        <div class="container">
+          <h2 class="materials__title"> Мы используем только качественные материалы и профессиональное оборудование</h2>
+          <div class="materials__slider slider">
             <div class="slider-line d-flex-full-center">
-              <div class="slide-first">
-                <img src="assets/images/main-banner.png" alt="1" />
+              <div class="slide first">
+                <img src="assets/images/works/slider/1.jpg" alt="1" />
+              </div>
+
+              <div class="slide">
+                <img src="assets/images/works/slider/2.jpg" alt="2" />
               </div>
               <div class="slide">
-                <img src="assets/images/main-banner.png" alt="2" />
+                <img src="assets/images/works/slider/3.jpg" alt="3" />
               </div>
               <div class="slide">
-                <img src="assets/images/main-banner.png" alt="3" />
+                <img src="assets/images/works/slider/4.jpg" alt="4" />
               </div>
               <div class="slide">
-                <img src="assets/images/back-pic.png" alt="4" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/main-banner.png" alt="5" />
+                <img src="assets/images/works/slider/5.jpg" alt="5" />
               </div>
             </div>
             <div class="navigation-manual d-flex-full-center">
-              <label
+              <div
                 for="radio_1"
                 class="manual-btn input--active"
                 data-slide="0"
-              ></label>
-              <label for="radio_2" class="manual-btn" data-slide="1"></label>
-              <label for="radio_3" class="manual-btn" data-slide="2"></label>
-              <label for="radio_4" class="manual-btn" data-slide="3"></label>
-              <label for="radio_5" class="manual-btn" data-slide="4"></label>
+              ></div>
+              <div for="radio_2" class="manual-btn" data-slide="1"></div>
+              <div for="radio_3" class="manual-btn" data-slide="2"></div>
+              <div for="radio_4" class="manual-btn" data-slide="3"></div>
+              <div for="radio_5" class="manual-btn" data-slide="4"></div>
             </div>
-            <button class="slider-prev button">
+            <button class="slider-prev slider-button">
               <img src="assets/images/works/slider_arrow.svg" alt="Prev" />
             </button>
-            <button class="slider-next button">
+            <button class="slider-next slider-button">
               <img src="assets/images/works/slider_arrow.svg" alt="Next" />
             </button>
           </div>
@@ -216,7 +215,7 @@
                 </div>
         
                 <div class="footer__bot-part footer-bot-part">
-                    <div class=" d-flex-center">
+                    <div class="d-flex-center">
                         <div class="footer__politics">
                             <p class="footer-bot-part__text">2008-2023 Все права защищены</p>
                             <a class="footer-bot-part__link" href="">Политика конфидециальности</a>
@@ -237,5 +236,6 @@
     </footer>
 
     <script src="assets/js/page-main.js"></script>
+    <script src="assets/js/our_works.js"></script>
 </body>
 </html>

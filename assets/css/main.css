@@ -342,14 +342,14 @@ body {
     font-weight: var(--font-weight-600);
 }
 
-.slider {
+.calculator__slider {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 120px;
 }
 
-.slider__pos {
+.calculator__slider-pos {
     position: relative;
     background-color: var(--orange-color);
     border-radius: 8px;
@@ -386,10 +386,14 @@ output {
     background-color: var(--blue-color);
 }
 
+/* slider. Слайдер Александра*/
+.materials__title {
+    padding-top: 108px;
+    font-size: var(--text-size-32);
+    font-weight: var(--font-weight-600);
+    font-family: var(--font-heading);
+}
 
-
-
-/* slider */
 input[placeholder] {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -398,23 +402,19 @@ input[placeholder] {
 	line-height: 130%;
 }
 
-.works__examples {
+.materials {
 	margin-bottom: 30px;
 }
-.works__examples-container {}
 
-.works__examples-title {}
-
-.works__examples-slider {
-	/* max-height: 90vh; */
+.materials__slider {
 	position: relative;
-	/* transform: translate(-50%, -50%); */
 }
 
 .slider {
 	max-width: 1140px;
 	position: relative;
 	margin: 0 auto;
+    margin-top: 48px;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -494,6 +494,19 @@ transition: all 1s ease;
 	margin-left: -80%; 
 }
 
+.slider-button {
+	padding: 15px 76px 16px 76px;
+	background: #044971;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%; 
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
 .slider-prev {
 	position: absolute;
 	top: 45%;
@@ -541,30 +554,6 @@ transition: all 1s ease;
 	opacity: 1;
 	transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* footer */
