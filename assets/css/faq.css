@@ -481,8 +481,12 @@ mark {
     text-decoration: none;
 }
 
+.footer-bot-part__link:hover {
+    color: var(--blue-color);
+}
+
 .footer-bot-part__number {
-    margin-left: var(--m24);
+    margin-left: var(--m36);
     font-family: var(--font-basic);
     font-weight: var(--font-weight-500);
     font-size: var(--font-size-18);
@@ -490,6 +494,10 @@ mark {
     color: var(--white-color);
 }
 
+.footer__icons svg:hover {
+    transform: scale(1.5);
+}
+
 .footer__icons {
-    gap: 156px;
+    gap: 168px;
 }
