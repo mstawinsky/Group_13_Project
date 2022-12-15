@@ -26,13 +26,14 @@
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/our_works.css" />
+    <link rel="stylesheet" href="assets/css/our_works-media.css" />
   </head>
 
   <body class="page">
     <!-- ==================================Our works====================================== -->
 
     <!-- =================================Main banner===================================== -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__top-part">
         <div class="container d-flex-center">
           <a class="logo-link" href="./index.html"
@@ -76,23 +77,24 @@
           >
         </div>
       </div>
-    </header>
+    </header> -->
 
     <main class="works">
       <section class="works__main">
         <div class="works__main-container container">
           <h1 class="works__title title">Наши работы</h1>
+
           <div class="works__main-banner">
             <div class="works__main-form application">
-              <form class="application__form" action="#">
+              <form class="application__form" action="#" method="post">
                 <h2 class="application__title title">Оставить заявку</h2>
                 <h3 class="application__subtitle title">Сделаем расчёт</h3>
                 <input type="text" placeholder="Имя" />
                 <input type="tel" placeholder="Телефон" />
-                <p class="application__text">
-                  Отправляя заявку, Вы соглашаетесь с<br />политикой
-                  конфиденциальности
-                </p>
+                <span class="span main-text"
+                  >Отправляя заявку, Вы соглашаетесь с<br />
+                  <a href="#">политикой конфиденциальности</a></span
+                >
                 <button class="application__button button" type="submit">
                   Отправить
                 </button>
@@ -153,7 +155,7 @@
           <div class="works__reviews-flex d-flex-center">
             <div class="works__reviews-item reviews-item">
               <div class="reviews__item-title">
-                <h3 class="title">Анна Владиславовна</h3>
+                <h3 class="title">Марина Андреевна</h3>
               </div>
               <div class="reviews__item-image">
                 <img
@@ -173,7 +175,7 @@
             </div>
             <div class="works__reviews-item reviews-item">
               <div class="reviews__item-title">
-                <h3 class="title">Алексей Александрович</h3>
+                <h3 class="title">Алексей Борисович</h3>
               </div>
               <div class="reviews__item-image">
                 <img
@@ -219,7 +221,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__wrapper">
         <div class="container">
           <div class="footer__top-part d-flex-center">
@@ -269,7 +271,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="assets/js/our_works.js"></script>
   </body>
 </html>

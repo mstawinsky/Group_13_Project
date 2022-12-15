@@ -11,6 +11,7 @@ window.onscroll = function() {
 		 header.classList.remove('scrolled')
 	}
 }
+
 const images = document.querySelectorAll('.slider .slider-line img');
 const sliderLine  = document.querySelector('.slider-line');
 const sliderRound = document.querySelectorAll('[data-slide]');
