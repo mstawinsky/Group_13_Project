@@ -419,8 +419,7 @@ input:focus {
 	flex-basis: 27%;
 	padding: 10px;
 	color: var(--white-color);
-	background-color: rgba(42, 47, 55, 0.75);
-	border: 2px solid #000;
+	background-color: var(--text-color);
 	border-radius: 10px;
 }
 
@@ -438,23 +437,33 @@ input:focus {
 	justify-content: flex-start;
 }
 
+.works__reviews-header {
+	width: 100%;
+	gap: 10px;
+	justify-content: flex-start;
+}
+
 .reviews__item-title {
 	flex-direction: column;
 	text-align: center;
 }
 
 .reviews__item-title h3{
+	font-size: 14px;
 	margin-bottom: 20px;
-	color: var(--orange-color);
+	color: var(--white-color);
 }
 
 .reviews__item-text {
+	background-color: rgba(42, 47, 55, 0.75);
 	text-align: left;
+	padding: 5px;
+	border-radius: 5px;
 }
 .reviews__img {
 	position: relative;
-	width: 150px;
-	height: 150px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	background-color: var(--white-color);
 	border: 2px solid #000;
