@@ -213,6 +213,14 @@ mark {
     height: 84px;
 }
 
+.header__toggle {
+    display: none;
+}
+
+.header__toggle.is-active+.main-menu {
+    display: block;
+}
+
 .main-menu__list {
     column-gap: var(--m96);
     font-family: var(--font-basic);

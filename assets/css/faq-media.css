@@ -54,6 +54,15 @@
 
     .container {
         max-width: 984px;
+        margin: auto;
+    }
+
+    .header__toggle {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
     }
 
     .zoom,
@@ -77,6 +86,7 @@
 
     .container {
         max-width: 732px;
+        margin: auto;
     }
 
     .zoom,
@@ -118,6 +128,7 @@
 
     .container {
         max-width: 396px;
+        margin: auto;
     }
 
     img,
@@ -146,6 +157,7 @@
 
     .container {
         max-width: 372px;
+        margin: auto;
     }
 
 }
@@ -154,6 +166,7 @@
 
     .container {
         max-width: 312px;
+        margin: auto;
     }
 
 }

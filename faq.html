@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EUROPOL-Полусухая стяжка пола НН-Ответы на&nbsp;часто задаваемые вопросы</title>
-    <meta name="description" content="Компания EUROPOL занимается полусухой стяжкой пола в&nbsp;Нижнем Новгороде и&nbsp;по&nbsp;области. Здесь есть ответы на&nbsp;часто задаваемые вопросы.">
+    <meta name="description"
+        content="Компания EUROPOL занимается полусухой стяжкой пола в&nbsp;Нижнем Новгороде и&nbsp;по&nbsp;области. Здесь есть ответы на&nbsp;часто задаваемые вопросы.">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -26,6 +27,7 @@
 
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/faq-media.css">
 </head>
@@ -64,12 +66,19 @@
                             fill="#231E20" />
                     </svg>
                 </a>
+
+                <button class="header__toggle hamburger hamburger--spin" type="button" onclick="this.classList.toggle('is-active')">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
                 <nav class="main-menu">
                     <ul class="main-menu__list main-menu__list--text flex d-flex-center">
                         <li class="main-menu__item"><a href="./index.html">Главная</a></li>
                         <li class="main-menu__item"><a href="./about.html">О&nbsp;нас</a></li>
-                        <li class="main-menu__item"><a href="./our_works.html">Наши работы</a></li>
-                        <li class="main-menu__item"><a href="./faq.html">Вопрос-Ответ</a></li>
+                        <li class="main-menu__item"><a href="./our_works.html">Наши&nbsp;работы</a></li>
+                        <li class="main-menu__item"><a href="./faq.html">Вопрос&nbsp;-&nbsp;Ответ</a></li>
                     </ul>
                 </nav>
             </div>
