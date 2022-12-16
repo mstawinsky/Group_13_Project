@@ -9,3 +9,9 @@ window.onscroll = function() {
         header.classList.remove('scrolled')
     }
 }
+
+function rangeFunc(vol) {
+    var output = document.querySelector('#fader');
+    output.value = vol;
+    output.style.left = vol - 20 + 'px';
+}
