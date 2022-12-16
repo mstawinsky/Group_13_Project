@@ -41,3 +41,10 @@ dots.forEach((item, indexDot)=> {
 });
 
 setInterval(nextSlide, 5000);
+
+const menuBtn = document.querySelector('.mobilemenu');
+const menu = document.querySelector('.main-menu');
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+});

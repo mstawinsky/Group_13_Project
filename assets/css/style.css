@@ -3,6 +3,10 @@ html {
     box-sizing: border-box;
 }
 
+main {
+    padding-top: 260px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -122,9 +126,13 @@ input[placeholder] {
 }
 
 .banner__item { 
+    position: relative;
     margin: 0;
     margin-bottom: 36px;
     grid-area: banner__item; 
+    height: 100%;   
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.25);
+    text-align: center;
 }
 
 .banner__item-item--two { 
@@ -133,12 +141,6 @@ input[placeholder] {
 
 .item--two {
     grid-row-start: 2;
-}
-
-.banner__item {
-    height: 100%;   
-    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.25);
-    text-align: center;
 }
 
 .banner__slider {
@@ -162,17 +164,34 @@ input[placeholder] {
     display: none;
 }
 
-.banner__item:hover {
-    background-color: var(--blue-color);
+.banner__item::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 10;
+	width: 0;
+	height: 100%;
+	background-color: var(--blue-color);
+	transition: width 0.3s ease;
+}
+
+.banner__item:hover::before {
+    width: 100%;
 }
 
 .banner__item:hover .banner__link {
     display: none;
 }
 
+.banner__link--hover {
+    position: relative;
+    z-index: 20;
+    color: #ffffff;
+}
+
 .banner__item:hover .banner__link--hover{
     display: block;
-    color: #fff;
 }
 
 .slide {
@@ -253,6 +272,43 @@ img {
     filter: blur(30%);
 }
 
+.works__title a {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.works__title a::before {
+    content:'';
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	background-color: var(--blue-color);
+	transition: width 0.3s ease;
+}
+
+.works__title a::after {
+    content:'\1F87A';
+	position: absolute;
+	right: -10px;
+    display: none;
+	width: 0;
+	height: 3px;
+    font-size: 24px;
+	color: var(--blue-color);
+	transition: display 0.8s;
+}
+
+.works__title a:hover::before {
+    width: 100%;
+}
+
+.works__title a:hover::after {
+    display: inline-block;
+}
+
 /* banner_video */
 .banner_video {
     height: 80vh;
@@ -299,7 +355,9 @@ img {
 }
 
 .guarantee__wrapp{
-    padding: 12px 24px;
+    margin: auto;
+    max-width: 800px;
+    padding: 24px 24px;
     background: #fff;
     box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     margin-bottom: 24px;
@@ -380,4 +438,101 @@ input:focus {
 
 .button:hover {
     background: #053d5e;
+}
+
+/* Mobile menu */
+.mobilemenu {
+    display: none;
+	width: 40px;
+	height: 33px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    cursor: pointer;
+}
+
+.mobilemenu__item {
+	width: 40px;
+	height: 3px;
+	position: absolute;
+    top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--blue-color);
+	transition: all 0.5s;
+}
+
+.mobilemenu__item:nth-of-type(2) {
+	top: calc(50% - 4px);
+}
+
+.mobilemenu__item:nth-of-type(3) {
+	top: calc(50% + 4px);
+}
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 0 15px;
+    }
+    .mobilemenu {
+        display: block;
+    }
+
+    .main-menu {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        width: 100%;
+        height: 100%;
+        padding: 50px 15px;
+        background: #ffffff;
+        transform: translateX(-100%);
+        transition: transform 0.5s; 
+    }
+
+    .logo-link{
+        position: relative;
+        z-index: 10;
+    }
+
+    .main-menu.active {
+        transform: translateX(0);
+    }
+    
+    .main-menu.active .main-menu__list {
+        padding-top: 48px;
+        flex-direction: column;
+    }
+    
+    .main-menu__item {
+        padding-bottom: 24px;
+        font-size: 24px;
+    }
+    .mobilemenu.active .mobilemenu__item:nth-of-type(1) {
+        display: none;
+    }
+
+    .mobilemenu.active .mobilemenu__item:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);  
+    }
+
+    .mobilemenu.active .mobilemenu__item:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+
+
+    .banner__data {
+        flex-wrap: wrap;
+    }
+
+    .banner__title {
+        margin: auto;
+        margin-bottom: 24px;
+    }
+
+    .banner__text {
+        margin: auto;
+    }
 }
