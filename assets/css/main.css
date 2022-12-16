@@ -460,7 +460,7 @@ input[placeholder] {
 
 	.navigation-manual {
 		position: absolute;
-		bottom: 16px;
+		top: 0;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -470,7 +470,7 @@ input[placeholder] {
 		width: 20px;
 		margin: 6px;
 		cursor: pointer;
-		background-color: var(--white-color);
+		background-color: var(--blue-color);
 		opacity: .9;
 		border-radius: 10px;
 		transition: all .4s ease;
