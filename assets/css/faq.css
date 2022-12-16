@@ -16,6 +16,8 @@
     --m108: 108px;
     --m96: 96px;
     --m72: 72px;
+    --m60: 60px;
+    --m48: 48px;
     --m36: 36px;
     --m24: 24px;
     --m12: 12px;
@@ -74,7 +76,7 @@ main {
 /* общий переиспользуемый div-контейнер */
 .container {
     margin: auto;
-    max-width: 1140px;
+    width: 1140px;
 }
 
 /* utility-first */
@@ -213,6 +215,27 @@ mark {
     height: 84px;
 }
 
+.hamburger {
+    padding: 15px 0 15px 15px;
+}
+
+.header__toggle {
+    display: none;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    height: 3px;
+    background-color: var(--blue-color);
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: var(--blue-color);
+}
+
 .main-menu__list {
     column-gap: var(--m96);
     font-family: var(--font-basic);
@@ -230,6 +253,10 @@ mark {
 .main-menu__list a:hover {
     transition: 0.3s ease;
     color: var(--orange-color);
+}
+
+.main-menu__action {
+    display: none;
 }
 
 .header__bot-part {
