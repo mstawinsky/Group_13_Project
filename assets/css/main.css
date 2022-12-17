@@ -44,6 +44,11 @@ body {
     display: flex;
 }
 
+.d-flex-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
 .d-flex-center {
     display: flex;
     justify-content: space-between;
@@ -371,6 +376,7 @@ body {
     font-family: var(--font-heading);
     font-size: var(--font-size-32);
     font-weight: var(--font-weight-600);
+    padding-bottom: 72px;
 }
 
 .calculator__slider {
@@ -391,10 +397,11 @@ body {
 output {
     position: absolute;
     top: -50px;
+    left: -10px;
     padding: 8px;
     background-color: var(--blue-color);
     color: var(--white-color);
-    border-radius: 50%;
+    border-radius: 8px 8px 0px 8px;
 }
 
 

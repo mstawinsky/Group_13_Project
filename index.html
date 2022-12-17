@@ -206,17 +206,25 @@
         <div class="calculator__wrapper">
             <div class="container">
                 <h2 class="calculator__title">Рассчитать стоимость услуги</h2>
-                <form class="calculator__form">
-                    <p>Слой покрытия: <select name="" id="" placeholder="Слой покрытия">
-                            <option value="70" selected>70мм и меньше</option>
-                            <option value="80">80мм</option>
-                            <option value="90">90мм</option>
-                        </select></p>
-                </form>
-                <div class="calculator__slider">
-                    <div class="calculator__slider-pos">
-                        <output for="calculator__range" class="metres" id="fader">30</output>
-                        <input class="calculator__range" type="range" min="30" max="350" value="30" step="1" oninput="rangeFunc(value)">
+                <div class="d-flex-sb">
+                    <div class="calculator__options">
+                        <form class="calculator__form">
+                            <p>Слой покрытия: <select name="" id="options" placeholder="Слой покрытия">
+                                    <option value="70" selected>70мм и меньше</option>
+                                    <option value="80">80мм</option>
+                                    <option value="90">90мм</option>
+                                </select></p>
+                        </form>
+                        <div class="calculator__slider">
+                            <div class="calculator__slider-pos">
+                                <output for="calculator__range" class="metres" id="fader">30</output>
+                                <input class="calculator__range" id="volu" type="range" min="30" max="350" value="30" step="1" oninput="rangeFunc(value)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculator__result">
+                        <p>Примерная стоимость: </p>
+                        <input class="calculator__cost" id="result" type="number" value="30">
                     </div>
                 </div>
             </div>
