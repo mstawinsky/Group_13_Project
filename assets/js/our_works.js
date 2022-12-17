@@ -80,3 +80,7 @@ for (const round of sliderRound) {
 		round.classList.add('input--active');
 	})
 }
+
+
+
+// --------------------------------------------
