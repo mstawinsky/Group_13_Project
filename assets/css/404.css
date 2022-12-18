@@ -1,3 +1,7 @@
+.page {
+    padding: 24px;
+}
+
 .container {
     margin: auto;
     max-width: 1140px;
@@ -10,7 +14,9 @@
 
 svg {
     align-self: flex-end;
-    margin-bottom: 48px;
+    margin-top: 24px;
+    width: 50%;
+    height: 50%;
 }
 
 h1,
