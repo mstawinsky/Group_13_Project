@@ -419,42 +419,21 @@ mark {
     transform: scale(1.1);
 }
 
-.faq__img1 {
-    width: 552px;
-    height: 624px;
-    object-fit: cover;
-}
-
-.faq__img2 {
-    width: 552px;
-    height: 492px;
-    object-fit: cover;
-}
-
-.faq__img3 {
-    width: 552px;
-    height: 642px;
-    object-fit: cover;
-}
-
-.faq__img4 {
-    width: 552px;
-    height: 558px;
+.faq__img1,
+.faq__img2,
+.faq__img3,
+.faq__img4,
+.faq__img5,
+.faq__img6 {
     object-fit: cover;
 }
 
 .faq__img5 {
     margin-right: -390px;
-    width: 942px;
-    height: 558px;
-    object-fit: cover;
 }
 
 .faq__img6 {
     margin-left: -390px;
-    width: 942px;
-    height: 558px;
-    object-fit: cover;
 }
 
 /* a */
