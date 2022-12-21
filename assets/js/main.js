@@ -18,6 +18,7 @@ for (let i = 0; i < btnOpen.length; i++) {
     btnOpen[i].onclick = function() {
         modal.style.display = "block";
         body.style.overflow = "hidden";
+        document.querySelectorAll('.form__field')[0].querySelector('.input-field').focus();
     };
 };
 
