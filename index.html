@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EUROPOL-Полусухая стяжка пола НН</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- fonts -->
@@ -22,14 +22,18 @@
         rel="stylesheet">
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-    <header class="header">
+    <a class="btn-up flex" href="#"></a>
+     <!-- header -->
+     <header class="header">
         <div class="header__top-part">
-            <div class="container d-flex-center">
-                <a class="logo-link" href="./index.html">
+            <div class="container flex">
+                <a class="logo-link header__logo" href="/">
                     <svg width="384" height="84" viewBox="0 0 384 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M32.2559 57.0537V62.8838H9.60938V57.0537H32.2559ZM11.6895 20.2275V62.8838H4.33594V20.2275H11.6895ZM29.2969 38.04V43.7822H9.60938V38.04H29.2969ZM32.1094 20.2275V26.0869H9.60938V20.2275H32.1094ZM62.1973 20.2275H69.5215V48.7334C69.5215 51.9756 68.8184 54.6904 67.4121 56.8779C66.0059 59.0654 64.0918 60.7158 61.6699 61.8291C59.2676 62.9229 56.582 63.4697 53.6133 63.4697C50.5469 63.4697 47.8125 62.9229 45.4102 61.8291C43.0078 60.7158 41.1133 59.0654 39.7266 56.8779C38.3594 54.6904 37.6758 51.9756 37.6758 48.7334V20.2275H45V48.7334C45 50.7842 45.3516 52.4736 46.0547 53.8018C46.7578 55.1104 47.7539 56.0771 49.043 56.7021C50.332 57.3271 51.8555 57.6396 53.6133 57.6396C55.3711 57.6396 56.8848 57.3271 58.1543 56.7021C59.4434 56.0771 60.4395 55.1104 61.1426 53.8018C61.8457 52.4736 62.1973 50.7842 62.1973 48.7334V20.2275ZM77.5195 20.2275H92.6074C95.8496 20.2275 98.6133 20.7158 100.898 21.6924C103.184 22.6689 104.932 24.1143 106.143 26.0283C107.373 27.9229 107.988 30.2666 107.988 33.0596C107.988 35.1885 107.598 37.0635 106.816 38.6846C106.035 40.3057 104.932 41.6729 103.506 42.7861C102.08 43.8799 100.381 44.7295 98.4082 45.335L96.1816 46.4189H82.6172L82.5586 40.5889H92.7246C94.4824 40.5889 95.9473 40.2764 97.1191 39.6514C98.291 39.0264 99.1699 38.1768 99.7559 37.1025C100.361 36.0088 100.664 34.7783 100.664 33.4111C100.664 31.9268 100.371 30.6377 99.7852 29.5439C99.2188 28.4307 98.3398 27.5811 97.1484 26.9951C95.957 26.3896 94.4434 26.0869 92.6074 26.0869H84.873V62.8838H77.5195V20.2275ZM101.865 62.8838L91.8457 43.7236L99.5508 43.6943L109.717 62.5029V62.8838H101.865ZM172.881 46.9756H161.777V41.1455H172.881C174.814 41.1455 176.377 40.833 177.568 40.208C178.76 39.583 179.629 38.7236 180.176 37.6299C180.742 36.5166 181.025 35.2471 181.025 33.8213C181.025 32.4736 180.742 31.2139 180.176 30.042C179.629 28.8506 178.76 27.8936 177.568 27.1709C176.377 26.4482 174.814 26.0869 172.881 26.0869H164.033V62.8838H156.68V20.2275H172.881C176.182 20.2275 178.984 20.8135 181.289 21.9854C183.613 23.1377 185.381 24.7393 186.592 26.79C187.803 28.8213 188.408 31.1455 188.408 33.7627C188.408 36.5166 187.803 38.8799 186.592 40.8525C185.381 42.8252 183.613 44.3389 181.289 45.3936C178.984 46.4482 176.182 46.9756 172.881 46.9756ZM229.014 40.3838V42.7275C229.014 45.9502 228.594 48.8408 227.754 51.3994C226.914 53.958 225.713 56.1357 224.15 57.9326C222.607 59.7295 220.752 61.1064 218.584 62.0635C216.416 63.001 214.014 63.4697 211.377 63.4697C208.76 63.4697 206.367 63.001 204.199 62.0635C202.051 61.1064 200.186 59.7295 198.604 57.9326C197.021 56.1357 195.791 53.958 194.912 51.3994C194.053 48.8408 193.623 45.9502 193.623 42.7275V40.3838C193.623 37.1611 194.053 34.2803 194.912 31.7412C195.771 29.1826 196.982 27.0049 198.545 25.208C200.127 23.3916 201.992 22.0146 204.141 21.0771C206.309 20.1201 208.701 19.6416 211.318 19.6416C213.955 19.6416 216.357 20.1201 218.525 21.0771C220.693 22.0146 222.559 23.3916 224.121 25.208C225.684 27.0049 226.885 29.1826 227.725 31.7412C228.584 34.2803 229.014 37.1611 229.014 40.3838ZM221.66 42.7275V40.3252C221.66 37.9424 221.426 35.8428 220.957 34.0264C220.508 32.1904 219.834 30.6572 218.936 29.4268C218.057 28.1768 216.973 27.2393 215.684 26.6143C214.395 25.9697 212.939 25.6475 211.318 25.6475C209.697 25.6475 208.252 25.9697 206.982 26.6143C205.713 27.2393 204.629 28.1768 203.73 29.4268C202.852 30.6572 202.178 32.1904 201.709 34.0264C201.24 35.8428 201.006 37.9424 201.006 40.3252V42.7275C201.006 45.1104 201.24 47.2197 201.709 49.0557C202.178 50.8916 202.861 52.4443 203.76 53.7139C204.678 54.9639 205.771 55.9111 207.041 56.5557C208.311 57.1807 209.756 57.4932 211.377 57.4932C213.018 57.4932 214.473 57.1807 215.742 56.5557C217.012 55.9111 218.086 54.9639 218.965 53.7139C219.844 52.4443 220.508 50.8916 220.957 49.0557C221.426 47.2197 221.66 45.1104 221.66 42.7275ZM263.086 57.0537V62.8838H241.67V57.0537H263.086ZM243.721 20.2275V62.8838H236.367V20.2275H243.721Z"
@@ -58,18 +62,30 @@
                     </svg>
                 </a>
                 <nav class="main-menu">
-                    <ul class="main-menu__list main-menu__list--text d-flex-center">
-                        <li class="main-menu__item"><a href="./index.html">Главная</a></li>
-                        <li class="main-menu__item"><a href="./about.html">О&nbsp;нас</a></li>
-                        <li class="main-menu__item"><a href="./our_works.html">Наши работы</a></li>
-                        <li class="main-menu__item"><a href="./faq.html">Вопрос-Ответ</a></li>
+                    <ul class="main-menu__list main-menu__list--text flex">
+                        <li class="main-menu__item main-menu__item--active"><a href="#!">Главная</a></li>
+                        <li class="main-menu__item"><a href="about.html">О&nbsp;нас</a></li>
+                        <li class="main-menu__item"><a href="our_works.html">Наши&nbsp;работы</a></li>
+                        <li class="main-menu__item"><a href="faq.html">Вопрос&nbsp;-&nbsp;Ответ</a></li>
                     </ul>
+                    <!-- mobile -->
+                    <div class="mobile__wrapp">
+                        <a class="phone mobile__phone" href="tel:+79960004574">+7 (996) 000-45-74</a><br>
+                        <a class="mobile__btn modal--open" href="#">Оставить заявку</a>
+                    </div>
                 </nav>
+
+                <!-- hamburger -->
+                <button class="header__toggle hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
         </div>
 
         <div class="header__bot-part header-bot-part">
-            <div class="container d-flex-center">
+            <div class="container flex">
                 <div class="header__worktime flex">
                     <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -91,193 +107,239 @@
                             d="M65.6202 37.5402C65.2156 37.5402 64.8117 37.3861 64.5027 37.0771L60.1797 32.7541C59.5625 32.1368 59.5625 31.1363 60.1797 30.5191C60.797 29.9018 61.7975 29.9018 62.4147 30.5191L65.6202 33.7238L68.8257 30.5191C69.443 29.9018 70.4435 29.9018 71.0607 30.5191C71.678 31.1363 71.678 32.1368 71.0607 32.7541L66.7377 37.0771C66.4295 37.3861 66.0249 37.5402 65.6202 37.5402Z"
                             fill="black" />
                     </svg>
-                    <p class="header-bot-part__text d-flex-center">
-                        Круглосуточно<br>Без выходных
-                    </p>
+                    <p class="header-bot-part__text flex flex">Круглосуточно<br>Без выходных</p>
                     <p></p>
                 </div>
 
                 <div class="header__feedback">
                     <p class="header-bot-part__text">
-                        Позвоните нам:<br>
-                        <span class="phone">+7&nbsp;(996)&nbsp;000&#x2012;45&#x2012;74</span>
+                        Позвоните нам: <a class="phone" href="tel:+79960004574">+7 (996) 000-45-74</a>
                     </p>
                 </div>
 
-                <a class="primary-btn primary-btn--orange" href="404.html">Оставить заявку</a>
+                <a class="header__btn primary-btn--orange modal--open" href="#">Оставить заявку</a>
+                
+                <!-- modal-form -->
+                <div id="modal">
+                    <div class="modal__wrapp">                       
+                        <span class="close" id="modal--close">&times;</span>
+                        <div class="modal__form">
+                            <h2 class="modal__title">Оставить заявку</h2>
+                            <p>Напишите нам и мы свяжемся с Вами в течение 15 минут!</p>
+                            <p>* обязательные поля</p>
+                            <form action="/" class="form">
+                                <div class="form__field">
+                                    <input type="text" class="input-field" placeholder="ФИО *" required>
+                                </div>
+                                <div class="form__field">
+                                    <input type="email" name="email" class="input-field" placeholder="Email">
+                                </div>
+                                <div class="form__field">
+                                    <input type="tel" name="phone" class="input-field tel" placeholder="+7(000)000-00-00 *" required>
+                                </div>
+                                <div class="form__field">
+                                    <textarea class="input-field form__textarea" placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="form__footer">
+                                    <span class="span main-text">Отправляя заявку, Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                                    <button type="submit" class="button form__submit primary-btn--orange">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="main-banner">
-        <div class="main-banner__wrapper">
-            <div class="container main-banner__height main-banner--text">
-                <h1 class="main-banner__title">Услуги механизированной полусухой стяжки <br>пола под ключ</h1>
-                <h3 class="main-banner__place">в г. Нижний Новгород и по области</h3>
-                <p class="main-banner__slogan">Ровнее, крепче, теплее</p>
-            </div>
-        </div>
-    </section>
+    <!-- Main -->
+    <main>
 
-    <section class="advantages">
-        <div class="container">
-            <h2 class="advantages__title">Достоинства полусухой стяжки пола</h2>
-            <div class="advantages-grid">
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/durability.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Надежность и долговечность</p>
-                    </div>
-                </div>
+        <!-- main-banner -->
+       <div class="main-banner">
+           <div class="main-banner__wrapper">
+               <div class="container main-banner__height main-banner--text">
+                   <h1 class="main-banner__title">Услуги механизированной полусухой стяжки <br>пола под ключ</h1>
+                   <h3 class="main-banner__place">в г. Нижний Новгород и по области</h3>
+                   <p class="main-banner__slogan">Ровнее, крепче, теплее</p>
+               </div>
+           </div>
+       </div>
+        <!-- advantages -->
+       <section class="advantages">
+           <div class="container">
+               <h2 class="advantages__title title">Достоинства полусухой стяжки пола</h2>
+               <div class="advantages-grid">
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/durability.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Надежность и долговечность</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/cheap.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Невысокая стоимость</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/test-pic.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Универсальная прочная основа</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/warm.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Тепло- и шумоизоляция</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/no-leaks.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Отсутствие протечек, трещин и проседаний</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/quick-work.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Быстро делается и сохнет</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/perfectly-smooth.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Идеально ровная безупречная поверхность</p>
+                       </div>
+                   </div>
+   
+                   <div class="advantages-grid__item">
+                       <img class="advantages__pic" src="assets/images/ecological.png" alt="">
+                       <div class="advantages-grid__bot-block">
+                           <p class="advantages-grid__text">Экологически чисто и безопасно для здоровья</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+        <!-- schemework -->
+       <div class="schemework">
+           <div class="container schemework__hover-effect">
+               <div class="schemework__wrapper" onclick="toggle_visibility('list')">
+                   <div class="schemework__figure ellypse">
+                       <p class="ellypse__text">Схема работы</p>
+                   </div>
+   
+                   <div class="schemework__text-block" id="list">
+                       <ul class="schemework__list d-flex-column-center">
+                           <li class="schemework__item">Вы звоните нам или оставляете заявку</li>
+                           <li class="schemework__item">Бесплатный выезд и консультация замерщика</li>
+                           <li class="schemework__item">Расчет стоимости и согласования сроков</li>
+                           <li class="schemework__item">Выполнение работ</li>
+                           <li class="schemework__item">Сдача объекта</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+        <!-- calculator -->
+       <div class="calculator">
+           <div class="calculator__wrapper">
+               <div class="container" id="width">
+                   <h2 class="calculator__title title">Рассчитать стоимость услуги</h2>
+                   <div class="d-flex-sb calculator__pos">
+                       <div class="calculator__options">
+                           <form class="calculator__form">
+                               <p class="calculator__layer">Слой покрытия: <select name="Слой" class="calculator__selector" id="options">
+                                       <option value="70" selected>70мм и меньше</option>
+                                       <option value="80">80мм</option>
+                                       <option value="90">90мм</option>
+                                   </select></p>
+                           </form>
+                           <p class="calculator__sqr">Площадь в м²:</p>
+                           <div class="calculator__slider">
+                               <div class="calculator__slider-pos">
+                                   <output for="calculator__range" class="metres" id="fader">30</output>
+                                   <input class="calculator__range" id="volu" type="range" min="30" max="350" value="30" step="1" oninput="rangeFunc(value)">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="calculator__result">
+                           <p class="calculator__cost-text">Примерная стоимость: </p>
+                           <label class="calculator__cost-lable">
+                               <input class="calculator__cost" id="result" type="text" value="18000" disabled>
+                           </label>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+        <!-- materials slider -->
+       <div class="materials">
+           <div class="container">
+             <h2 class="materials__title title"> Мы используем только качественные материалы и профессиональное оборудование</h2>
+             <div class="materials__slider slider">
+               <div class="slider-line d-flex-full-center">
+                 <div class="slide first">
+                   <img src="assets/images/main-slide1.png" alt="1" />
+                 </div>
+                 <div class="slide">
+                   <img src="assets/images/main-slide2.png" alt="2" />
+                 </div>
+                 <div class="slide">
+                   <img src="assets/images/main-slide3.png" alt="3" />
+                 </div>
+                 <div class="slide">
+                   <img src="assets/images/main-slide4.png" alt="4" />
+                 </div>
+                 <div class="slide">
+                   <img src="assets/images/main-slide5.png" alt="5" />
+                 </div>
+               </div>
+               <div class="navigation-manual d-flex-full-center">
+                 <div
+                   for="radio_1"
+                   class="manual-btn input--active"
+                   data-slide="0"
+                 ></div>
+                 <div for="radio_2" class="manual-btn" data-slide="1"></div>
+                 <div for="radio_3" class="manual-btn" data-slide="2"></div>
+                 <div for="radio_4" class="manual-btn" data-slide="3"></div>
+                 <div for="radio_5" class="manual-btn" data-slide="4"></div>
+               </div>
+               <button class="button slider-prev slider-button">
+                 <img src="assets/images/works/slider_arrow.svg" alt="Prev" />
+               </button>
+               <button class="button slider-next slider-button">
+                 <img src="assets/images/works/slider_arrow.svg" alt="Next" />
+               </button>
+             </div>
+           </div>
+       </div>
+       <!-- action banner -->
+   
+       <div class="action-banner">
+           <div class="container action-banner__pos">
+               <div class="action-banner__wrapper">
+                   <img class="action-banner__pic" src="assets/images/action-pic.png" alt="">
+               </div>
+               <a class="button primary-btn primary-btn--blue action-banner__btn" href="#">Оставить заявку</a>
+           </div>
+       </div>
+    </main>
 
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/cheap.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Невысокая стоимость</p>
-                    </div>
-                </div>
-
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/test-pic.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Универсальная прочная основа</p>
-                    </div>
-                </div>
-
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/warm.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Тепло- и шумоизоляция</p>
-                    </div>
-                </div>
-
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/no-leaks.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Отсутствие протечек, трещин и проседаний</p>
-                    </div>
-                </div>
-
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/quick-work.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Быстро делается и сохнет</p>
-                    </div>
-                </div>
-
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/perfectly-smooth.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Идеально ровная безупречная поверхность</p>
-                    </div>
-                </div>
-
-                <div class="advantages-grid__item">
-                    <img class="advantages__pic" src="assets/images/ecological.png" alt="">
-                    <div class="advantages-grid__bot-block">
-                        <p class="advantages-grid__text">Экологически чисто и безопасно для здоровья</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="schemework">
-        <div class="container schemework__hover-effect">
-            <div class="schemework__wrapper">
-                <div class="schemework__figure ellypse">
-                    <p class="ellypse__text">Схема работы</p>
-                </div>
-
-                <div class="schemework__text-block">
-                    <ul class="schemework__list d-flex-column-center">
-                        <li class="schemework__item">Вы звоните нам или оставляете заявку</li>
-                        <li class="schemework__item">Бесплатный выезд и консультация замерщика</li>
-                        <li class="schemework__item">Расчет стоимости и согласования сроков</li>
-                        <li class="schemework__item">Выполнение работ</li>
-                        <li class="schemework__item">Сдача объекта</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="calculator">
-        <div class="calculator__wrapper">
-            <div class="container">
-                <h2 class="calculator__title">Рассчитать стоимость услуги</h2>
-                <div class="d-flex-sb">
-                    <div class="calculator__options">
-                        <form class="calculator__form">
-                            <p>Слой покрытия: <select name="" id="options" placeholder="Слой покрытия">
-                                    <option value="70" selected>70мм и меньше</option>
-                                    <option value="80">80мм</option>
-                                    <option value="90">90мм</option>
-                                </select></p>
-                        </form>
-                        <div class="calculator__slider">
-                            <div class="calculator__slider-pos">
-                                <output for="calculator__range" class="metres" id="fader">30</output>
-                                <input class="calculator__range" id="volu" type="range" min="30" max="350" value="30" step="1" oninput="rangeFunc(value)">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calculator__result">
-                        <p>Примерная стоимость: </p>
-                        <input class="calculator__cost" id="result" type="number" value="30">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="materials">
-        <div class="container">
-          <h2 class="materials__title"> Мы используем только качественные материалы и профессиональное оборудование</h2>
-          <div class="materials__slider slider">
-            <div class="slider-line d-flex-full-center">
-              <div class="slide first">
-                <img src="assets/images/main-slide1.png" alt="1" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/main-slide2.png" alt="2" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/main-slide3.png" alt="3" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/main-slide4.png" alt="4" />
-              </div>
-              <div class="slide">
-                <img src="assets/images/main-slide5.png" alt="5" />
-              </div>
-            </div>
-            <div class="navigation-manual d-flex-full-center">
-              <div
-                for="radio_1"
-                class="manual-btn input--active"
-                data-slide="0"
-              ></div>
-              <div for="radio_2" class="manual-btn" data-slide="1"></div>
-              <div for="radio_3" class="manual-btn" data-slide="2"></div>
-              <div for="radio_4" class="manual-btn" data-slide="3"></div>
-              <div for="radio_5" class="manual-btn" data-slide="4"></div>
-            </div>
-            <button class="slider-prev slider-button">
-              <img src="assets/images/works/slider_arrow.svg" alt="Prev" />
-            </button>
-            <button class="slider-next slider-button">
-              <img src="assets/images/works/slider_arrow.svg" alt="Next" />
-            </button>
-          </div>
-        </div>
-    </section>
-
+     <!-- footer -->
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="container">
-                <div class="footer__top-part d-flex-center">
-                    <a class="logo-link" href="./index.html">
+                <div class="footer__top-part flex">
+                    <a class="logo-link footer__logo" href="/">
                         <svg width="384" height="84" viewBox="0 0 384 84" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -307,17 +369,17 @@
                         </svg>
                     </a>
                     <nav class="main-menu">
-                        <ul class="main-menu__list main-menu__list--footer-text d-flex-center">
-                            <li class="main-menu__item"><a href="./index.html">Главная</a></li>
-                            <li class="main-menu__item"><a href="./about.html">О&nbsp;нас</a></li>
-                            <li class="main-menu__item"><a href="./our_works.html">Наши работы</a></li>
-                            <li class="main-menu__item"><a href="./faq.html">Вопрос-Ответ</a></li>
+                        <ul class="main-menu__list main-menu__list--footer-text">
+                            <li class="main-menu__item"><a href="index.html">Главная</a></li>
+                            <li class="main-menu__item"><a href="about.html">О&nbsp;нас</a></li>
+                            <li class="main-menu__item"><a href="our_works.html">Наши работы</a></li>
+                            <li class="main-menu__item"><a href="faq.html">Вопрос-Ответ</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="footer__bot-part footer-bot-part">
-                    <div class="flex d-flex-center">
+                    <div class="footer__bot-content flex">
                         <div class="footer__politics">
                             <p class="footer-bot-part__text">
                                 &#169; 2008-2023 Все права защищены
@@ -327,7 +389,7 @@
 
                         <div class="footer__feedback">
                             <p class="footer-bot-part__number phone">
-                                +7&nbsp;(996)&nbsp;000&#x2012;45&#x2012;74
+                                <a class="phone" href="tel:+79960004574">+7 (996) 000 - 45 - 74</a>
                             </p>
                         </div>
 
@@ -374,7 +436,8 @@
             </div>
         </div>
     </footer>
-
+     <!-- js scripts -->
+     <script src="assets/js/main.js"></script>
     <script src="assets/js/page-main.js"></script>
     <script src="assets/js/our_works.js"></script>
 </body>
