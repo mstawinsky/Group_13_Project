@@ -2,6 +2,10 @@
     overflow: hidden;
 }
 
+.footer__wrapper .container {
+    overflow: visible;
+}
+
 main {
     padding-top: 0;
 }
@@ -33,7 +37,7 @@ main {
 /* main-banner */
 
 .main-banner {
-    padding-top: 108px;
+    padding-top: 215px;
 }
 
 .main-banner__wrapper {
