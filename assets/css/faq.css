@@ -74,6 +74,7 @@ mark {
 
 /* div - блоки вопросов */
 .faq__question {
+    width: 100%;
     position: relative;
     padding-bottom: var(--m24);
     background-color: #ffffff;
