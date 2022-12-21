@@ -45,11 +45,6 @@ mark {
     border-bottom: 1px solid var(--text-color);
 }
 
-/* span - телефон */
-.phone {
-    font-weight: var(--font-weight-500);
-}
-
 /* section */
 
 .faq {
@@ -315,6 +310,14 @@ mark {
         margin-bottom: var(--m36);
         row-gap: var(--m36);
         background: none;
+    }
+
+    .mobile__phone {
+        margin-bottom: 0;
+    }
+
+    .faq__main-text br {
+        display: none;
     }
 }
 
