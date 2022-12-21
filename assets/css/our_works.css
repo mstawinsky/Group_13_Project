@@ -195,11 +195,6 @@
 	border-bottom: 1px solid rgb(62, 63, 63);
 }
 
-.reviews__item-title {
-	/* flex-direction: column;
-	text-align: center; */
-}
-
 .reviews__item-title h3{
 	font-size: var(--font-size-16);
 	margin-bottom: 20px;
@@ -239,9 +234,15 @@
 	.slider {
 		max-width: 90%;
 	}
+	h1, h2 {
+		margin-left: 20px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
+	.works__reviews-flex {
+		padding: 20px;
+	}
 	.works__reviews-item {
 		flex-basis: 30%;
 	}
