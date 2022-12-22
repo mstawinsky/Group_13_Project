@@ -292,4 +292,8 @@
 	.works__reviews-item {
 		flex-basis: 70%;
 	}
+
+	.works__title {
+		font-size: 32px;
+	}
 }

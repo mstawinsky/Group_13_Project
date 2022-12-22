@@ -328,4 +328,8 @@ mark {
         grid-template-columns: 100%;
 
     }
+
+    .faq__main-title {
+        font-size: 32px;
+    }
 }

@@ -22,11 +22,6 @@ for (let i = 0; i < btnOpen.length; i++) {
     };
 };
 
-/* btnOpen.onclick = function() {
-  modal.style.display = "block";
-  body.style.overflow = "hidden";
-};
- */
 btnClose.onclick = function() {
   modal.style.display = "none";
   body.style.overflow = "visible";
@@ -42,13 +37,13 @@ window.onclick = function(event) {
 
 window.onscroll = function() {
     const scrollCurrent = window.pageYOffset;
-    const header = document.querySelector('header')
+    const header = document.querySelector('header');
     if (scrollCurrent>=100) {
-        header.classList.add('scrolled')
+        header.classList.add('scrolled');
     }
     
     else {
-        header.classList.remove('scrolled')
+        header.classList.remove('scrolled');
     }
 };
 

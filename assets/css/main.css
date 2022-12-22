@@ -767,6 +767,10 @@ transition: all 1s ease;
     main {
         padding-top: 80px;
     }
+
+    .action-banner__btn {
+        width: 92%;
+    }
 }
 
 
