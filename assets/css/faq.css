@@ -22,7 +22,6 @@ ul {
     padding: 0;
 }
 
-
 /* faq__title */
 .faq__title {
     padding: var(--m24);
@@ -196,6 +195,11 @@ mark {
     transition: 0.3s ease;
 }
 
+.faq-mobile__phone {
+    display: inline;
+    margin: 0;
+}
+
 /* Media */
 
 @media screen and (max-width: 1365px) {
@@ -236,7 +240,7 @@ mark {
     .faq__img4,
     .faq__img5,
     .faq__img6 {
-        width: 480px;
+        width: 100%;
     }
 
     .faq__content {
@@ -286,12 +290,6 @@ mark {
     }
 }
 
-@media screen and (max-width: 890px) {
-    .faq-mobile__phone {
-        margin: 0;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .faq__content {
         grid-template-columns: 70%;
@@ -323,7 +321,7 @@ mark {
     }
 
     .mobile__phone {
-        margin-bottom: 0;
+        display: block;
     }
 }
 
