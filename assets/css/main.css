@@ -6,10 +6,6 @@
     overflow: visible;
 }
 
-main {
-    padding-top: 0;
-}
-
 .d-flex-sb {
     display: flex;
     justify-content: space-between;
@@ -35,10 +31,6 @@ main {
 
 
 /* main-banner */
-
-.main-banner {
-    padding-top: 215px;
-}
 
 .main-banner__wrapper {
     margin-bottom: var(--m108);
@@ -523,8 +515,8 @@ transition: all 1s ease;
 
 .action-banner__btn {
     position: absolute;
-    right: 0;
-    bottom: 190px;
+    right: 2%;
+    bottom: 3%;
 }
 
 .action-banner__pos a:hover {
@@ -532,15 +524,7 @@ transition: all 1s ease;
     transition: .4s ease;
 }
 
-.action-banner__wrapper {
-    position: relative;
-    padding-top: 56.25%;
-}
-
 .action-banner__pic {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: auto;
 }
@@ -591,11 +575,6 @@ transition: all 1s ease;
     .advantages__pic {
         width: 100%;
     }
-
-    .action-banner__btn {
-        right: 12px;
-        bottom: 168px;
-    }
 }
 @media screen and (max-width: 1023px){
     .main-banner__slogan {
@@ -604,10 +583,6 @@ transition: all 1s ease;
 
     .header__bot-part .header__btn {
         display: none;
-    }
-
-    .action-banner__btn {
-        bottom: 162px;
     }
 
     /* advantages */
@@ -632,8 +607,8 @@ transition: all 1s ease;
     }
 
     .primary-btn {
-        padding: 10px 30px;
-        font-size: 12px;
+        padding: 13px 30px;
+        font-size: 14px;
     }
 }
 
@@ -685,9 +660,6 @@ transition: all 1s ease;
         left: 40%;
     }
 
-    .action-banner__btn {
-        bottom: 120px;
-    }
 }
 
 @media screen and (max-width: 515px){
@@ -763,8 +735,12 @@ transition: all 1s ease;
         text-align: center;
     }
 
+    .action-banner__pos {
+        padding-bottom: 80px;
+    }
+
     .action-banner__btn {
-        bottom: 15px;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
         width: 94%;
@@ -780,6 +756,10 @@ transition: all 1s ease;
         font-size: 60px;
         width: 250px;
         padding-right: 36px;
+    }
+
+    .materials__title {
+        font-size: 18px;
     }
 }
 

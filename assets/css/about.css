@@ -380,11 +380,22 @@ img {
         justify-content: center;
         gap: 12px 48px;
     }
+    .banner__title {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .section  {
+        margin-bottom: var(--m48);
+    }
+
     .banner__data {
         margin-bottom: var(--m36);
+    }
+
+    .title {
+        font-size: 24px;
     }
 
     .banner__title {
@@ -407,9 +418,17 @@ img {
     .properties__card_wrapp {
         flex-direction: column;
     }
+
+    .banner_video {
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    main {
+        padding-top: 80px;
+    }
+
     .banner__wrapp {
         display: flex;
         flex-direction: column-reverse;
@@ -433,6 +452,6 @@ img {
     }
 
     .section {
-        margin-bottom: var(--m48);
+        margin-bottom: var(--m36);
     }
 }
