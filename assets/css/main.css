@@ -268,12 +268,14 @@ main {
 .calculator__layer {
     font-size: var(--font-size-22);
     font-weight: var(--font-weight-500);
+    padding-left: 12px;
 }
 
 .calculator__sqr {
-    padding-top: 120px;
     font-size: var(--font-size-22);
     font-weight: var(--font-weight-500);
+    padding-top: 120px;
+    padding-left: 12px;
 }
 
 .calculator__slider {
@@ -281,6 +283,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 48px;
+    padding-left: 12px;
 }
 
 .calculator__slider-pos {
@@ -289,10 +292,6 @@ main {
     border-radius: 8px;
     width: 610px;
     height: 24px;
-}
-
-.calculator__range {
-    height: 48px;
 }
 
 output {
@@ -333,9 +332,9 @@ output {
 .calculator__cost {
     font-size: 140px;
     background-color: var(--orange-color);
-    color: black;
+    color: var(--text-color);
     border: 0;
-    width: 516px;
+    width: 500px;
     height: 400px;
 }
 
@@ -346,6 +345,10 @@ output {
 }
 
 .calculator__cost:focus {
+    outline: none;
+}
+
+input:focus {
     outline: none;
 }
 
@@ -373,7 +376,7 @@ output {
 }
 @media (min-width: 576px) and (max-width: 1199px) {
 	.slider {
-		max-width: 80%;
+		max-width: 100%;
 	}}
 
 @media (max-width: 576px) {
@@ -552,7 +555,7 @@ transition: all 1s ease;
     }
 
     .advantages__pic {
-        width: 468px;
+        width: 546px;
     }
     
     .main-banner__slogan {
