@@ -34,7 +34,6 @@ img {
     display: block;
 }
 
-
 /* стили текста - выделенный, подчеркнутый, жирный (телефон) */
 mark {
     color: var(--white-color);
@@ -222,7 +221,6 @@ mark {
     .zoom5-6:hover img {
         transform: scale(1.1);
     }
-
 }
 
 @media screen and (max-width: 1279px) {
@@ -282,6 +280,16 @@ mark {
     .faq {
         margin: 0;
     }
+
+    .faq__main-text br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .faq-mobile__phone {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -317,16 +325,11 @@ mark {
     .mobile__phone {
         margin-bottom: 0;
     }
-
-    .faq__main-text br {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .faq__content {
         grid-template-columns: 100%;
-
     }
 
     .faq__main-title {

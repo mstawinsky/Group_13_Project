@@ -652,9 +652,10 @@ textarea[placeholder] {
     }
 
     .mobile__btn {
-        text-decoration: none;
-        color: var(--font-text);
         font-weight: 600;
+        font-size: 20px;
+        color: var(--blue-color);
+        text-decoration: none;
     }
 
     .mobile__btn:hover {
