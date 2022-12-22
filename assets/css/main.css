@@ -775,6 +775,12 @@ transition: all 1s ease;
     .main-banner__wrapper, .advantages, .schemework, .calculator {
         margin-bottom: var(--m60);
     }
+
+    .calculator__cost {
+        font-size: 60px;
+        width: 200px;
+        height: 180px;
+    }
 }
 
 
