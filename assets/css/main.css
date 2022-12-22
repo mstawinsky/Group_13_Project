@@ -763,5 +763,11 @@ transition: all 1s ease;
     }
 }
 
+@media screen and (max-width: 375px) {
+    main {
+        padding-top: 80px;
+    }
+}
+
 
 
