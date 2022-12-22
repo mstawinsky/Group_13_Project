@@ -591,6 +591,10 @@ transition: all 1s ease;
     .advantages__pic {
         width: 100%;
     }
+
+    .action-banner__btn {
+        bottom: 168px;
+    }
 }
 @media screen and (max-width: 1023px){
     .main-banner__slogan {
@@ -599,6 +603,10 @@ transition: all 1s ease;
 
     .header__bot-part .header__btn {
         display: none;
+    }
+
+    .action-banner__btn {
+        bottom: 200px;
     }
 
     /* advantages */
