@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EUROPOL-Полусухая стяжка пола НН-О нас</title>
     <meta name="description"
-        content="Компания EUROPOL занимается полусухой стяжкой пола в&nbsp;Нижнем Новгороде и&nbsp;по&nbsp;области. Наши работы">
+        content="Компания EUROPOL занимается полусухой стяжкой пола в&nbsp;Нижнем Новгороде и&nbsp;по&nbsp;области. О нас">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -32,6 +32,35 @@
 </head>
 <body class="page">
     <a class="btn-up flex" href="#"></a>
+    <!-- modal-form -->
+    <div id="modal">
+        <div class="modal__wrapp">                       
+            <span class="close" id="modal--close">&times;</span>
+            <div class="modal__form">
+                <h2 class="modal__title">Оставить заявку</h2>
+                <p>Напишите нам и мы свяжемся с Вами в течение 15 минут!</p>
+                <p>* обязательные поля</p>
+                <form action="/" class="form">
+                    <div class="form__field">
+                        <input type="text" class="input-field" placeholder="ФИО *" required>
+                    </div>
+                    <div class="form__field">
+                        <input type="email" name="email" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="form__field">
+                        <input type="tel" name="phone" class="input-field tel" placeholder="+7(000)000-00-00 *" required>
+                    </div>
+                    <div class="form__field">
+                        <textarea class="input-field form__textarea" placeholder="Сообщение"></textarea>
+                    </div>
+                    <div class="form__footer">
+                        <span class="span main-text">Отправляя заявку, Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                        <button type="submit" class="button form__submit primary-btn--orange">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Header -->
     <header class="header">
         <div class="header__top-part">
@@ -123,36 +152,6 @@
                 </div>
 
                 <a class="primary-btn primary-btn--orange modal--open" href="#">Оставить заявку</a>
-
-                <!-- modal-form -->
-                <div id="modal">
-                    <div class="modal__wrapp">                       
-                        <span class="close" id="modal--close">&times;</span>
-                        <div class="modal__form">
-                            <h2 class="modal__title">Оставить заявку</h2>
-                            <p>Напишите нам и мы свяжемся с Вами в течение 15 минут!</p>
-                            <p>* обязательные поля</p>
-                            <form action="/" class="form">
-                                <div class="form__field">
-                                    <input type="text" class="input-field" placeholder="ФИО *" required>
-                                </div>
-                                <div class="form__field">
-                                    <input type="email" name="email" class="input-field" placeholder="Email">
-                                </div>
-                                <div class="form__field">
-                                    <input type="tel" name="phone" class="input-field tel" placeholder="+7(000)000-00-00 *" required>
-                                </div>
-                                <div class="form__field">
-                                    <textarea class="input-field form__textarea" placeholder="Сообщение"></textarea>
-                                </div>
-                                <div class="form__footer">
-                                    <span class="span main-text">Отправляя заявку, Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
-                                    <button type="submit" class="button form__submit primary-btn--orange">Отправить</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>

@@ -7,7 +7,7 @@
 
 .banner__data {
     justify-content: space-between;
-    margin-bottom: var(--title-mb);
+    margin-bottom: var(--m108);
 }
 
 .banner__title {
@@ -34,7 +34,7 @@
     position: relative;
     justify-content: center;
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: var(--m36);
     height: 100%;   
     box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.25);
     text-align: center;
@@ -166,7 +166,7 @@ img {
 
 /* works */
 .works {
-    margin-bottom: 108px;
+    margin-bottom: var(--m108);
 }
 
 .works__banner {
@@ -238,7 +238,7 @@ img {
 
 .banner_video h2 a{
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .banner_video h2:hover {
@@ -268,7 +268,7 @@ img {
     padding: 24px 24px;
     background: #fff;
     box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    margin-bottom: 24px;
+    margin-bottom: var(--m24);
 }
 
 .guarantee__heading::-webkit-details-marker{display:none;}
@@ -304,7 +304,7 @@ img {
 
 /* form */
 .request {
-    margin-bottom: 108px;
+    margin-bottom: var(--m108);
 }
 
 .request__form {
@@ -314,7 +314,7 @@ img {
 }
 
 .request__input {
-    margin-bottom: 36px;
+    margin-bottom: var(--m36);
     width: 100%;
     height: 54px;
 }
@@ -332,7 +332,7 @@ img {
 
 .span {
     display: block;
-    margin-bottom: 36px;
+    margin-bottom: var(--m36);
     text-align: start;
 }
 
@@ -349,7 +349,7 @@ img {
 
     .banner__title {
         margin: auto;
-        margin-bottom: 24px;
+        margin-bottom: var(--m24);
     }
 
     .banner__text {
@@ -366,7 +366,7 @@ img {
     }
 
     .properties__card {
-        margin-bottom: 12px;
+        margin-bottom: var(--m12);
     }
 
     .banner_video h2 {
@@ -401,5 +401,31 @@ img {
 }
 
 @media screen and (max-width: 374px) {
+    @media screen and (max-width: 375px) {
+    .banner__wrapp {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    .slider__wrapper {
+        height: 240px;
+    }
+
+    .banner__item {
+        min-height: 65px;
+        margin-bottom: 0;
+    }
+
+    .banner_video {
+        height: 50vh;
+    }
+
+    .banner_video h2 {
+        font-size: 2em;
+    }
+
+    .section {
+        margin-bottom: var(--m48);
+    }
+}
 }
