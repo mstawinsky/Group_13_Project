@@ -777,8 +777,8 @@ transition: all 1s ease;
     }
 
     .calculator__cost {
-        font-size: 56px;
-        width: 230px;
+        font-size: 52px;
+        width: 250px;
     }
 }
 
