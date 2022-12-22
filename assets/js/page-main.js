@@ -98,7 +98,7 @@ function rangeFunc(vol) {
     }
 
     const container = document.querySelector('#width').clientWidth;  
-    if (container>400) {
+    if (container>450) {
         output.style.left = vol - 30 + 'px';
     }
 
