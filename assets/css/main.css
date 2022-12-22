@@ -523,7 +523,7 @@ transition: all 1s ease;
 
 .action-banner__btn {
     position: absolute;
-    right: 12px;
+    right: 0;
     bottom: 190px;
 }
 
