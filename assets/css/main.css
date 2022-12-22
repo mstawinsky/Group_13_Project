@@ -593,12 +593,13 @@ transition: all 1s ease;
     }
 
     .action-banner__btn {
+        right: 12px;
         bottom: 168px;
     }
 }
 @media screen and (max-width: 1023px){
     .main-banner__slogan {
-        padding-top: 250px;
+        padding-top: 200px;
     }
 
     .header__bot-part .header__btn {
@@ -606,7 +607,7 @@ transition: all 1s ease;
     }
 
     .action-banner__btn {
-        bottom: 200px;
+        bottom: 162px;
     }
 
     /* advantages */
@@ -633,11 +634,6 @@ transition: all 1s ease;
     .primary-btn {
         padding: 10px 30px;
         font-size: 12px;
-    }
-
-    .action-banner__btn {
-        right: 12px;
-        bottom: 136px;
     }
 }
 
@@ -687,6 +683,10 @@ transition: all 1s ease;
     .slider-next img{
         top: 1px;
         left: 40%;
+    }
+
+    .action-banner__btn {
+        bottom: 120px;
     }
 }
 
@@ -764,7 +764,7 @@ transition: all 1s ease;
     }
 
     .action-banner__btn {
-        bottom: 9px;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
         width: 94%;
