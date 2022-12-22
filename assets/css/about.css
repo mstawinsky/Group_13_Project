@@ -383,11 +383,16 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+    .banner__data {
+        margin-bottom: var(--m36);
+    }
+
     .banner__title {
         font-size: 34px;
     }
 
     .banner__wrapp {
+        grid-template-rows: 320px 190px;
         gap: 24px 12px;
     }
 
@@ -395,13 +400,16 @@ img {
         font-size: 18px;
     }
 
+    .slider__wrapper {
+        height: 340px;
+    }
+
     .properties__card_wrapp {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 374px) {
-    @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
     .banner__wrapp {
         display: flex;
         flex-direction: column-reverse;
@@ -427,5 +435,4 @@ img {
     .section {
         margin-bottom: var(--m48);
     }
-}
 }
