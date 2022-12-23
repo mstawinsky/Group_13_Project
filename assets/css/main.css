@@ -90,7 +90,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: var(--m36);
-    padding-bottom: 12px;
+    padding-bottom: 24px;
     z-index: -1;
 }
 
@@ -107,7 +107,6 @@
     margin: 0;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-300);
-    line-height: 60px;
     text-align: center;
 }
 
