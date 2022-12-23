@@ -519,11 +519,6 @@ transition: all 1s ease;
     bottom: 3%;
 }
 
-.action-banner__pos a:hover {
-    transform: scale(1.1);
-    transition: .4s ease;
-}
-
 .action-banner__pic {
     width: 100%;
     height: auto;
@@ -752,7 +747,7 @@ transition: all 1s ease;
     .calculator__cost {
         font-size: 60px;
         width: 250px;
-        padding-right: 36px;
+        text-align: left;
     }
 
     .materials__title {
