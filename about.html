@@ -54,7 +54,7 @@
                         <textarea class="input-field form__textarea" placeholder="Сообщение"></textarea>
                     </div>
                     <div class="form__footer">
-                        <span class="span main-text">Отправляя заявку, Вы соглашаетесь с <a href="#!">политикой конфиденциальности</a></span>
+                        <span class="span main-text">Отправляя заявку, Вы соглашаетесь с <a href="404.html">политикой конфиденциальности</a></span>
                         <button type="submit" class="button form__submit primary-btn--orange">Отправить</button>
                     </div>
                 </form>
@@ -165,8 +165,7 @@
                     <h1 class="banner__title title">О нас</h1>
                     <div class="banner__text main-text">Полусухая стяжка пола для частных зданий и коммерческих объектов - наша специализация,
                         и мы знаем о ней все «от» и «до». Сегодня на нашем счету уже более 5000 успешно выполненных
-                        объектов по заливке сухой стяжки по Нижнему Новгороду и Нижегородской области.
-                        Наш мастер произведет замер в любое удобное для Вас время - просто позвоните нам!</div>
+                        объектов по заливке сухой стяжки по Нижнему Новгороду и Нижегородской области.</div>
                 </div>
                 <div class="banner__wrapp grid">
                     <h3 class="banner__item flex">
@@ -175,7 +174,7 @@
                     </h3>
                     <h3 class="banner__item item--two flex">
                         <a class="banner__link" href="#!">Более 5000 успешно выполненных работ</a>
-                        <a class="banner__link--hover" href="our_works.html">Перейти в галерию</a>
+                        <a class="banner__link--hover" href="our_works.html">Перейти в галерею</a>
                     </h3>
                     <div class="banner__slider flex">
                         <div class="slider__wrapper">
@@ -229,7 +228,9 @@
             <div class="container">
                 <h2 class="works__title title"><a href="our_works.html">Наши работы</a></h2>
                 <div class="banner_video flex">
-                    <video class="video" src="assets/images/video.mp4" autoplay muted loop>
+                    <video class="video" autoplay muted loop>
+                        <source src="assets/images/video.mp4" type="video/mp4">
+                        <source src="assets/images/video.ogg" type="video/ogg">
                     </video>
                     <h2><a href="our_works.html">EURO_POL52</a></h2>
                 </div>
@@ -262,10 +263,11 @@
             <div class="container">
                 <h2 class="request__title title">Оставить заявку</h2>
                 <form action="/" class="request__form">
+                    <p class="request__text main-text">Наш мастер произведет замер в любое удобное для Вас время - просто позвоните нам или заполните форму!</p>
                     <input class="request__input" type="text" placeholder="Имя *" required>
                     <input class="request__input tel" type="tel" placeholder="Телефон *" required>
                     <input class="request__input" type="email" placeholder="Email">
-                    <span class="span main-text">Отправляя заявку, Вы соглашаетесь с<br> <a class="" href="#">политикой конфиденциальности</a></span>
+                    <span class="span main-text">Отправляя заявку, Вы соглашаетесь с<br> <a class="" href="404.html">политикой конфиденциальности</a></span>
                     <button  class="button primary-btn--blue" type="submit">Отправить</button>
                 </form>
             </div>

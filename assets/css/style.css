@@ -24,10 +24,21 @@ body {
 
 .phone {
     text-decoration: none;
-    color: var(--font-text);
+    color: var(--text-color);
     font-weight: var(--font-weight-500);
 }
 
+.footer-bot-part__number .phone {
+    color: var(--white-text);
+}
+
+.phone:hover {
+    color: var(--orange-color);
+}
+
+.footer-bot-part__number .phone:hover {
+    color: var(--blue-color);
+}
 
 h1 {
     font-weight: var(--font-weight-700);
