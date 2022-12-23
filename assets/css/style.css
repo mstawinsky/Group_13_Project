@@ -13,7 +13,7 @@ html {
 }
 
 main {
-    padding-top: 230px;
+    padding-top: 225px;
 }
 
 body {
@@ -696,7 +696,7 @@ textarea[placeholder] {
     }
 
     main {
-        padding-top: 95px;
+        padding-top: 108px;
     }
 
     .logo-link svg {
@@ -768,6 +768,10 @@ textarea[placeholder] {
 }
 
 @media screen and (max-width: 480px) {
+    main {
+		padding-top: 95px;
+	}
+
     .header__top-part {
         height: 96px;
     }
@@ -815,5 +819,9 @@ textarea[placeholder] {
 
     .primary-btn {
         padding: 14px 27px;
+    }
+
+    .main-menu__item {
+        font-size: 20px;
     }
 }
