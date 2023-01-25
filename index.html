@@ -40,9 +40,9 @@
                 <h2 class="modal__title">Оставить заявку</h2>
                 <p>Напишите нам и мы свяжемся с Вами в течение 15 минут!</p>
                 <p>* обязательные поля</p>
-                <form action="/" class="form">
+                <form action="send.php" class="form" method="post">
                     <div class="form__field">
-                        <input type="text" class="input-field" placeholder="ФИО *" required>
+                        <input type="text" name="fio" class="input-field" placeholder="ФИО *" required>
                     </div>
                     <div class="form__field">
                         <input type="email" name="email" class="input-field" placeholder="Email">
@@ -51,7 +51,7 @@
                         <input type="tel" name="phone" class="input-field tel" placeholder="+7(000)000-00-00 *" required>
                     </div>
                     <div class="form__field">
-                        <textarea class="input-field form__textarea" placeholder="Сообщение"></textarea>
+                        <textarea name="message" class="input-field form__textarea" placeholder="Сообщение"></textarea>
                     </div>
                     <div class="form__footer">
                         <span class="span main-text">Отправляя заявку, Вы соглашаетесь с <a href="404.html">политикой конфиденциальности</a></span>
